@@ -112,8 +112,12 @@ document_path_list = []
 #     document_path_list.append('BBC News Summary/News Articles/sport/' + article)
 #     doc_detail(document_path_list)
 # document_path_list = []
+counter = 0
 for article in tech_articles_list:
     document_path_list.append('BBC News Summary/News Articles/tech/' + article)
     doc_detail(document_path_list)
+    counter += 1
+    if counter == 1:
+        break
 sorted_freq = sorted(word_freq.items(), key=operator.itemgetter(1), reverse=True)
 print(sorted_freq)
