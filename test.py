@@ -17,7 +17,7 @@ NP_grammar = '''
 
 def chunk_print(chunk_list):
     for chunk in chunk_list:
-        print('page: ', chunk[0], ' | chunk_list: ', chunk[1])
+        print('sentence #', chunk[0], ': chunk_list: ', chunk[1])
 
 
 def idf_calc(document_number):
