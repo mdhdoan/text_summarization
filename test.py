@@ -15,6 +15,11 @@ NP_grammar = '''
                 {<NNP>+}
 '''
 
+def chunk_print(chunk_list):
+    for chunk in chunk_list:
+        print('page: ', chunk[0], ' | chunk_list: ', chunk[1])
+
+
 def idf_calc(document_number):
     del_term = []
     for term in doc_freq:
@@ -65,15 +70,14 @@ def doc_detail(document_path_list):
     sent_counter = 0
     for sentence in sentence_list:
         sent_counter += 1
+        NP_chunk_list = [sent_counter]
         word_list = nltk.word_tokenize(sentence)
         word_tag_list = pos_tag(word_list)
-        NP_chunk_list = NP_chunking(word_tag_list)
+        NP_chunk_list.append(NP_chunking(word_tag_list))
         if NP_chunk_list == []:
             continue
-        NP_chunk_list.append(sent_counter)
         doc_chunk_list.append(NP_chunk_list)
-    for chunk in doc_chunk_list:
-        print(chunk)
+    chunk_print(doc_chunk_list)
         
 # business_articles_list = os.listdir('BBC News Summary/News Articles/business/')
 # entertainment_articles_list = os.listdir('BBC News Sumtfidfary/News Articles/entertainment/')
