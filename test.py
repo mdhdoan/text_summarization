@@ -130,6 +130,7 @@ def sent_tfidf_calc(chunk_list):
     return tfidf_sum
 
 
+## 
 def sentence_pairing(document_path_list, article, doc_chunk_dict):
     document = open(document_path_list, 'r')
     text = document.readlines()
@@ -157,9 +158,9 @@ def sentence_pairing(document_path_list, article, doc_chunk_dict):
                 s_detail = doc[2:]
                 for _, sid in s_detail:
                     if sid in doc_chunk_holder.keys():
-                        doc_chunk_holder[sid].append([key, values[0]])
+                        doc_chunk_holder[sid].append([key, values[1]])
                     else:
-                        doc_chunk_holder[sid] = [[key, values[0]]]
+                        doc_chunk_holder[sid] = [[key, values[1]]]
     for sent, sid in sentence_dict.items():
         if sid in doc_chunk_holder.keys():
             tfidf_sum = sent_tfidf_calc(doc_chunk_holder[sid])
@@ -207,7 +208,7 @@ def category_summary(summary_type):
     NP_del_list = idf_calc(counter, doc_chunk_dict)
     print('Appear everywhere: \n', NP_del_list)
     # chunk_print(doc_chunk_dict)
-
+    print('calculated_idf')
     for key, values in doc_chunk_dict.items():
         if key in all_chunk_dict.keys():
             all_chunk_dict[key].append([summary_type[:-1], values])
@@ -229,29 +230,3 @@ if __name__ == '__main__':
     for category in categories:
         category_summary(category)
     
-    # category_summary('tech/')
-    # document_path_list = []
-    # counter = 0
-    # summary_type = 'tech/'
-    # for article in tech_articles_list[:]:
-    #     document_path_list = ('BBC News Summary/News Articles/' + summary_type + article)
-    #     # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
-    #     counter += 1
-    #     # print("Article #" + str(counter) + ': ' + article)
-    #     NP_chunk_build(document_path_list, article)
-    
-    # NP_del_list = idf_calc(counter)
-    # print('Appear everywhere: \n', NP_del_list)
-    # # chunk_print(doc_chunk_dict)
-
-    # for article in tech_articles_list[:10]:
-    #     document_path_list = 'BBC News Summary/News Articles/' + summary_type + article
-    #     sentence_chunk_pair_list = sentence_pairing(document_path_list, article)
-    #     # print('sentence_chunk_pair_list: \n', sentence_chunk_pair_list)
-    #     T5_sent_ranked = rank_sentence(sentence_chunk_pair_list, 5)
-    #     # print(T5_sent_ranked)
-    #     write_summary(T5_sent_ranked, summary_type, article)
-
-
-    # sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
-    # print('sorted_freq: \n', sorted_freq[:5])
