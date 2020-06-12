@@ -14,30 +14,43 @@ NP_grammar = '''
                 {<NNP>+}
 '''
 
-def chunk_print(doc_chunk_list):
-    for chunk in doc_chunk_list:
-        for key, value in chunk.items():
-            print('chunk: ', key)
-            for doc_id in [value[1]]:
-                print(' doc_id: ', doc_id)
-                sent_detail = value[2]
-                print('  og_sent: ',sent_detail[0], '\tsid: ', sent_detail[1])
+def chunk_print(doc_chunk_dict):
+    sort_dict = {}
+    NP_list = list(doc_chunk_dict.keys())
+    NP_group = []
+    for NP_chunk in NP_list:
+        NP_group.append(NP_chunk.split('**'))
+        for NP in NP_group:
+            sort_dict[NP_chunk] = [len(NP)]
+    for NP, value in sort_dict.items():
+        value.append(doc_chunk_dict[NP][0])
+    sorted_list = sorted(sort_dict.items(), key=operator.itemgetter(1))
+    sorted_dict = dict(sorted_list)
+    for NP in sorted_dict.keys():
+        print('NP: ', NP)
+        print('  tfidf: ', doc_chunk_dict[NP][0])
+        print('  tf: ', doc_chunk_dict[NP][1])
+        print('  idf: ', doc_chunk_dict[NP][2])
+        print('  detail: ', doc_chunk_dict[NP][3])
 
 def idf_calc(document_number):
     del_NP_list = []
     for NP, doc_list in doc_chunk_dict.items():
-        doc_sum = 0
+        doc_sum = len(doc_list)
+        tf = 0.0
         for doc in doc_list:
-            doc_sum += int(doc[1])
+            tf += doc[1]
         idf = math.log10(document_number/doc_sum)
+        # print(tf, idf)
+        tfidf = tf*idf
         if idf == 0.0:
             del_NP_list.append(NP)
+            doc_chunk_dict[NP] = [tfidf, tf, idf, doc_list]
         else:
-            doc_chunk_dict[NP] = [idf, doc_list]
+            doc_chunk_dict[NP] = [tfidf, tf, idf, doc_list]
+    # for NP in del_NP_list:
+    #     del del_NP_list[NP]
     return del_NP_list
-    # for term in del_term:
-    #     del doc_freq[NP]
-
 
 def tuple_gathering(tuple_mix_list):
     result = set()
@@ -71,18 +84,12 @@ def NP_chunking(word_tag_list):
     return NP_chunk_dict
 
 
-# def sentence_counter(term, sentence):
-#     for term in sentence: 
-
-
-def doc_detail(document_path_list, article):
+def NP_chunk_build(document_path_list, article):
     doc_id = article.split('.')[0]
-    # print(doc_id)
     document = open(document_path_list, 'r')
     text = document.readlines()
     sentence_list = []
     current_doc_chunk_dict = {}
-
     for line in text:
         sentence_list.extend(nltk.sent_tokenize(line))
     sent_id = 0
@@ -102,7 +109,6 @@ def doc_detail(document_path_list, article):
                 cd_id = current_doc_chunk_dict[key][0]
                 NP_d_id = value[0]
                 if NP_d_id == cd_id:
-                    # print(doc_chunk_dict[key])
                     current_doc_chunk_dict[key][1] += 1
                     current_doc_chunk_dict[key].append(value[2])
                 else:
@@ -116,75 +122,80 @@ def doc_detail(document_path_list, article):
             doc_chunk_dict[key] = [value]
     # print(current_doc_chunk_dict)
         
-# business_articles_list = os.listdir('BBC News Summary/News Articles/business/')
-# entertainment_articles_list = os.listdir('BBC News Sumtfidfary/News Articles/entertainment/')
-# politics_articles_list = os.listdir('BBC News Summary/News Articles/politics/')
-# sport_articles_list = os.listdir('BBC News Summary/News Articles/sport/')
-tech_articles_list = os.listdir('BBC News Summary/News Articles/tech/')
-document_path_list = []
-counter = 0
+# def doc_examine(doc_id):
+#     for NP, values in doc_chunk_dict.items():
+
+    
+
+if __name__ == '__main__':
+    business_articles_list = os.listdir('BBC News Summary/News Articles/business/')
+    entertainment_articles_list = os.listdir('BBC News Summary/News Articles/entertainment/')
+    politics_articles_list = os.listdir('BBC News Summary/News Articles/politics/')
+    sport_articles_list = os.listdir('BBC News Summary/News Articles/sport/')
+    tech_articles_list = os.listdir('BBC News Summary/News Articles/tech/')
+    document_path_list = []
+    counter = 0
 
 
-# for article in business_articles_list:
-#     document_path_list = 'BBC News Summary/News Articles/business/' + article
-#     counter += 1
-#     print("Article #" + str(counter) + ': ' + article)
-#     doc_detail(document_path_list)
-# # print("word_freq: \n ", word_freq, "\n")
-# sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
-# print('sorted_freq: \n', sorted_freq)
-# sorted_freq = []
+    # document_path_list = []
+    # counter = 0
+    # for article in business_articles_list[:]:
+    #     document_path_list = ('BBC News Summary/News Articles/business/' + article)
+    #     # summary_path_list = ('BBC News Summary/Summaries/business/' + article)
+    #     counter += 1
+    #     print("Article #" + str(counter) + ': ' + article)
+    #     NP_chunk_build(document_path_list, article)
+    # NP_del_list = idf_calc(counter)
+    # print('Appear everywhere: \n', NP_del_list)
+    # chunk_print(doc_chunk_dict)
 
-# document_path_list = []
-# counter = 0
-# for article in entertainment_articles_list:
-#     document_path_list = 'BBC News Summary/News Articles/entertainment/' + article
-#     counter += 1
-#     # print("Article #" + str(counter) + ': ' + article)
-#     doc_detail(document_path_list)
-# # print("word_freq: \n ", word_freq, "\n")
-# sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
-# print('sorted_freq: \n', sorted_freq)
-# sorted_freq = []
+    # document_path_list = []
+    # counter = 0
+    # for article in entertainment_articles_list[:]:
+    #     document_path_list = ('BBC News Summary/News Articles/entertainment/' + article)
+    #     # summary_path_list = ('BBC News Summary/Summaries/entertainment/' + article)
+    #     counter += 1
+    #     print("Article #" + str(counter) + ': ' + article)
+    #     NP_chunk_build(document_path_list, article)
+    # NP_del_list = idf_calc(counter)
+    # print('Appear everywhere: \n', NP_del_list)
+    # chunk_print(doc_chunk_dict)
 
-# document_path_list = []
-# counter = 0
-# for article in politics_articles_list:
-#     document_path_list = 'BBC News Summary/News Articles/politics/' + article
-#     counter += 1
-#     # print("Article #" + str(cbreakounter) + ': ' + article)
-#     doc_detail(document_path_list)
-# # print("word_freq: \n ", word_freq, "\n")
-# sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
-# print('sorted_freq: \n', sorted_freq)
-# sorted_freq = []
+    # document_path_list = []
+    # counter = 0
+    # for article in politics_articles_list[:]:
+    #     document_path_list = ('BBC News Summary/News Articles/politics/' + article)
+    #     # summary_path_list = ('BBC News Summary/Summaries/politics/' + article)
+    #     counter += 1
+    #     print("Article #" + str(counter) + ': ' + article)
+    #     NP_chunk_build(document_path_list, article)
+    # NP_del_list = idf_calc(counter)
+    # print('Appear everywhere: \n', NP_del_list)
+    # chunk_print(doc_chunk_dict)
 
-# document_path_list = []
-# counter = 0
-# for article in sport_articles_list:
-#     document_path_list = 'BBC News Summary/News Articles/sport/' + article
-#     counter += 1
-#     # print("Article #" + str(counter) + ': ' + article)
-#     doc_detail(document_path_list)
-# # print("word_freq: \n ", word_freq, "\n")
-# sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
-# print('sorted_freq: \n', sorted_freq)
-# sorted_freq = []
+    # document_path_list = []
+    # counter = 0
+    # for article in sport_articles_list[:]:
+    #     document_path_list = ('BBC News Summary/News Articles/sport/' + article)
+    #     # summary_path_list = ('BBC News Summary/Summaries/sport/' + article)
+    #     counter += 1
+    #     print("Article #" + str(counter) + ': ' + article)
+    #     NP_chunk_build(document_path_list, article)
+    # NP_del_list = idf_calc(counter)
+    # print('Appear everywhere: \n', NP_del_list)
+    # chunk_print(doc_chunk_dict)
 
-document_path_list = []
-counter = 0
-for article in tech_articles_list[:5]:
-    document_path_list = ('BBC News Summary/News Articles/tech/' + article)
-    # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
-    counter += 1
-    print("Article #" + str(counter) + ': ' + article)
-    doc_detail(document_path_list, article)
-    # print("doc_chunk_dict: ", doc_chunk_dict)
-    # print("Sum Article doc_freq = {}
-# print("doc_chunk_dict: \n", doc_chunk_dict)
-NP_del_list = idf_calc(counter)
-print('Appear everywhere: \n', NP_del_list)
-# print("doc_chunk_dict: \n", doc_chunk_dict)
+    document_path_list = []
+    counter = 0
+    for article in tech_articles_list[:]:
+        document_path_list = ('BBC News Summary/News Articles/tech/' + article)
+        # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
+        counter += 1
+        print("Article #" + str(counter) + ': ' + article)
+        NP_chunk_build(document_path_list, article)
+    NP_del_list = idf_calc(counter)
+    print('Appear everywhere: \n', NP_del_list)
+    chunk_print(doc_chunk_dict)
 
-# sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
-# print('sorted_freq: \n', sorted_freq[:5])
+    # sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
+    # print('sorted_freq: \n', sorted_freq[:5])
