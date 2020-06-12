@@ -8,7 +8,14 @@ from nltk.stem import WordNetLemmatizer, SnowballStemmer
 # nltk.download('wordnet')
 wnl = WordNetLemmatizer()
 sns = SnowballStemmer('english')
+business_chunk_dict = {}
+entertainment_chunk_dict = {}
+politics_chunk_dict = {}
+sport_chunk_dict = {}
+tech_chunk_dict = {}
 doc_chunk_dict = {}
+
+tech_chunk_dict = doc_chunk_dict
 NP_grammar = '''
     NP CHUNK:   {<VB>?<JJ>*(<NN>|<NNS>)+}
                 {<NNP>+}
@@ -121,11 +128,73 @@ def NP_chunk_build(document_path_list, article):
         else: 
             doc_chunk_dict[key] = [value]
     # print(current_doc_chunk_dict)
-        
-# def doc_examine(doc_id):
-#     for NP, values in doc_chunk_dict.items():
 
-    
+def sent_tfidf_calc(chunk_list):
+    tfidf_sum = 0.0
+    for chunk in chunk_list:
+        tfidf_sum += chunk[1]
+    return tfidf_sum
+
+
+def sentence_pairing(document_path_list, article):
+    document = open(document_path_list, 'r')
+    text = document.readlines()
+    sentence_dict = {}
+    sentence_list = []
+    for line in text:
+        sentence_line = nltk.sent_tokenize(line)
+        if sentence_line != []:
+            for sentence in sentence_line:
+                sentence_list.append(sentence)
+        else: 
+            continue
+    # print(sentence_list)
+    sent_counter = 0
+    for sentence in sentence_list:
+        sent_counter += 1
+        key = str(sentence)  
+        sentence_dict[key] = sent_counter
+    doc_chunk_holder = {}
+    for key, values in doc_chunk_dict.items():
+        for doc in values[3]:
+            doc_id = doc[0]
+            article_id = article.split('.')[0]
+            if doc_id == article_id:
+                s_detail = doc[2:]
+                for _, sid in s_detail:
+                    if sid in doc_chunk_holder.keys():
+                        doc_chunk_holder[sid].append([key, values[0]])
+                    else:
+                        doc_chunk_holder[sid] = [[key, values[0]]]
+    for sent, sid in sentence_dict.items():
+        if sid in doc_chunk_holder.keys():
+            tfidf_sum = sent_tfidf_calc(doc_chunk_holder[sid])
+            sentence_dict[sent] = [tfidf_sum, doc_chunk_holder[sid]]
+        else: 
+            sentence_dict[sent] = [0]
+    return sentence_dict
+
+
+def rank_sentence(sentence_dict, top):
+    sent_list = list(sentence_dict.keys())
+    sort_dict = {}
+    sent_group = []
+    for sent in sent_list:
+        sent_group.append(sent.split('**'))
+        for NP in sent_group:
+            sort_dict[sent] = [len(NP)]
+    for NP, value in sort_dict.items():
+        value.append(sentence_dict[NP][0])
+    sorted_list = sorted(sort_dict.items(), key=operator.itemgetter(1), reverse=True)[:top]
+    sorted_dict = dict(sorted_list)
+    return sorted_dict
+
+
+def write_summary(top_sent_rank, article):
+    summary_file = open(summary_path+article, 'w')
+    print('writing summaries for ', article)
+    for sentence in top_sent_rank:
+        summary_file.write(sentence)
 
 if __name__ == '__main__':
     business_articles_list = os.listdir('BBC News Summary/News Articles/business/')
@@ -133,6 +202,7 @@ if __name__ == '__main__':
     politics_articles_list = os.listdir('BBC News Summary/News Articles/politics/')
     sport_articles_list = os.listdir('BBC News Summary/News Articles/sport/')
     tech_articles_list = os.listdir('BBC News Summary/News Articles/tech/')
+    summary_path = 'My Summaries/'
     document_path_list = []
     counter = 0
 
@@ -191,11 +261,19 @@ if __name__ == '__main__':
         document_path_list = ('BBC News Summary/News Articles/tech/' + article)
         # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
         counter += 1
-        print("Article #" + str(counter) + ': ' + article)
+        # print("Article #" + str(counter) + ': ' + article)
         NP_chunk_build(document_path_list, article)
     NP_del_list = idf_calc(counter)
     print('Appear everywhere: \n', NP_del_list)
-    chunk_print(doc_chunk_dict)
+    # chunk_print(doc_chunk_dict)
+
+    for article in tech_articles_list[:10]:
+        document_path_list = 'BBC News Summary/News Articles/tech/' + article
+        sentence_chunk_pair_list = sentence_pairing(document_path_list, article)
+        # print('sentence_chunk_pair_list: \n', sentence_chunk_pair_list)
+        T5_sent_ranked = rank_sentence(sentence_chunk_pair_list, 5)
+        write_summary(T5_sent_ranked, article)
+
 
     # sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
     # print('sorted_freq: \n', sorted_freq[:5])
