@@ -8,14 +8,8 @@ from nltk.stem import WordNetLemmatizer, SnowballStemmer
 # nltk.download('wordnet')
 wnl = WordNetLemmatizer()
 sns = SnowballStemmer('english')
-business_chunk_dict = {}
-entertainment_chunk_dict = {}
-politics_chunk_dict = {}
-sport_chunk_dict = {}
-tech_chunk_dict = {}
-doc_chunk_dict = {}
-
-tech_chunk_dict = doc_chunk_dict
+all_chunk_dict = {}
+file_path = 'BBC News Summary/News Articles/'
 NP_grammar = '''
     NP CHUNK:   {<VB>?<JJ>*(<NN>|<NNS>)+}
                 {<NNP>+}
@@ -40,7 +34,7 @@ def chunk_print(doc_chunk_dict):
         print('  idf: ', doc_chunk_dict[NP][2])
         print('  detail: ', doc_chunk_dict[NP][3])
 
-def idf_calc(document_number):
+def idf_calc(document_number, doc_chunk_dict):
     del_NP_list = []
     for NP, doc_list in doc_chunk_dict.items():
         doc_sum = len(doc_list)
@@ -91,7 +85,7 @@ def NP_chunking(word_tag_list):
     return NP_chunk_dict
 
 
-def NP_chunk_build(document_path_list, article):
+def NP_chunk_build(document_path_list, article, doc_chunk_dict):
     doc_id = article.split('.')[0]
     document = open(document_path_list, 'r')
     text = document.readlines()
@@ -136,7 +130,7 @@ def sent_tfidf_calc(chunk_list):
     return tfidf_sum
 
 
-def sentence_pairing(document_path_list, article):
+def sentence_pairing(document_path_list, article, doc_chunk_dict):
     document = open(document_path_list, 'r')
     text = document.readlines()
     sentence_dict = {}
@@ -196,86 +190,67 @@ def write_summary(top_sent_rank, summary_type, article):
     for sentence in top_sent_rank:
         summary_file.write(sentence)
 
-if __name__ == '__main__':
-    business_articles_list = os.listdir('BBC News Summary/News Articles/business/')
-    entertainment_articles_list = os.listdir('BBC News Summary/News Articles/entertainment/')
-    politics_articles_list = os.listdir('BBC News Summary/News Articles/politics/')
-    sport_articles_list = os.listdir('BBC News Summary/News Articles/sport/')
-    tech_articles_list = os.listdir('BBC News Summary/News Articles/tech/')
-    summary_path = 'My Summaries/'
+
+def category_summary(summary_type):
     document_path_list = []
     counter = 0
+    article_list = os.listdir(file_path + summary_type)
+    doc_chunk_dict = {}
 
-
-    # document_path_list = []
-    # counter = 0
-    # for article in business_articles_list[:]:
-    #     document_path_list = ('BBC News Summary/News Articles/business/' + article)
-    #     # summary_path_list = ('BBC News Summary/Summaries/business/' + article)
-    #     counter += 1
-    #     print("Article #" + str(counter) + ': ' + article)
-    #     NP_chunk_build(document_path_list, article)
-    # NP_del_list = idf_calc(counter)
-    # print('Appear everywhere: \n', NP_del_list)
-    # chunk_print(doc_chunk_dict)
-
-    # document_path_list = []
-    # counter = 0
-    # for article in entertainment_articles_list[:]:
-    #     document_path_list = ('BBC News Summary/News Articles/entertainment/' + article)
-    #     # summary_path_list = ('BBC News Summary/Summaries/entertainment/' + article)
-    #     counter += 1tech
-    #     print("Article #" + str(counter) + ': ' + article)
-    #     NP_chunk_build(document_path_list, article)
-    # NP_del_list = idf_calc(counter)
-    # print('Appear everywhere: \n', NP_del_list)
-    # chunk_print(doc_chunk_dict)
-
-    # document_path_list = []
-    # counter = 0
-    # for article in politics_articles_list[:]:
-    #     document_path_list = ('BBC News Summary/News Articles/politics/' + article)
-    #     # summary_path_list = ('BBC News Summary/Summaries/politics/' + article)
-    #     counter += 1
-    #     print("Article #" + str(counter) + ': ' + article)
-    #     NP_chunk_build(document_path_list, article)
-    # NP_del_list = idf_calc(counter)
-    # print('Appear everywhere: \n', NP_del_list)
-    # chunk_print(doc_chunk_dict)
-
-    # document_path_list = []
-    # counter = 0
-    # for article in sport_articles_list[:]:
-    #     document_path_list = ('BBC News Summary/News Articles/sport/' + article)
-    #     # summary_path_list = ('BBC News Summary/Summaries/sport/' + article)
-    #     counter += 1
-    #     print("Article #" + str(counter) + ': ' + article)
-    #     NP_chunk_build(document_path_list, article)
-    # NP_del_list = idf_calc(counter)
-    # print('Appear everywhere: \n', NP_del_list)
-    # chunk_print(doc_chunk_dict)
-
-    document_path_list = []
-    counter = 0
-    summary_type = 'tech/'
-    for article in tech_articles_list[:]:
-        document_path_list = ('BBC News Summary/News Articles/' + summary_type + article)
+    for article in article_list[:]:
+        document_path_list = (file_path + summary_type + article)
         # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
         counter += 1
         # print("Article #" + str(counter) + ': ' + article)
-        NP_chunk_build(document_path_list, article)
+        NP_chunk_build(document_path_list, article, doc_chunk_dict)
     
-    NP_del_list = idf_calc(counter)
+    NP_del_list = idf_calc(counter, doc_chunk_dict)
     print('Appear everywhere: \n', NP_del_list)
     # chunk_print(doc_chunk_dict)
 
-    for article in tech_articles_list[:10]:
-        document_path_list = 'BBC News Summary/News Articles/' + summary_type + article
-        sentence_chunk_pair_list = sentence_pairing(document_path_list, article)
+    for key, values in doc_chunk_dict.items():
+        if key in all_chunk_dict.keys():
+            all_chunk_dict[key].append([summary_type[:-1], values])
+        else:
+            all_chunk_dict[key] = [summary_type[:-1], values]
+
+    for article in article_list[:10]:
+        document_path_list = file_path + summary_type + article
+        sentence_chunk_pair_list = sentence_pairing(document_path_list, article, doc_chunk_dict)
         # print('sentence_chunk_pair_list: \n', sentence_chunk_pair_list)
         T5_sent_ranked = rank_sentence(sentence_chunk_pair_list, 5)
         # print(T5_sent_ranked)
         write_summary(T5_sent_ranked, summary_type, article)
+
+
+if __name__ == '__main__':
+    categories = ['business/','entertainment/','politics/','sport/','tech/']
+    summary_path = 'My Summaries/'
+    for category in categories:
+        category_summary(category)
+    
+    # category_summary('tech/')
+    # document_path_list = []
+    # counter = 0
+    # summary_type = 'tech/'
+    # for article in tech_articles_list[:]:
+    #     document_path_list = ('BBC News Summary/News Articles/' + summary_type + article)
+    #     # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
+    #     counter += 1
+    #     # print("Article #" + str(counter) + ': ' + article)
+    #     NP_chunk_build(document_path_list, article)
+    
+    # NP_del_list = idf_calc(counter)
+    # print('Appear everywhere: \n', NP_del_list)
+    # # chunk_print(doc_chunk_dict)
+
+    # for article in tech_articles_list[:10]:
+    #     document_path_list = 'BBC News Summary/News Articles/' + summary_type + article
+    #     sentence_chunk_pair_list = sentence_pairing(document_path_list, article)
+    #     # print('sentence_chunk_pair_list: \n', sentence_chunk_pair_list)
+    #     T5_sent_ranked = rank_sentence(sentence_chunk_pair_list, 5)
+    #     # print(T5_sent_ranked)
+    #     write_summary(T5_sent_ranked, summary_type, article)
 
 
     # sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
