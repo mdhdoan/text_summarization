@@ -190,8 +190,8 @@ def rank_sentence(sentence_dict, top):
     return sorted_dict
 
 
-def write_summary(top_sent_rank, article):
-    summary_file = open(summary_path+article, 'w')
+def write_summary(top_sent_rank, summary_type, article):
+    summary_file = open(summary_path + summary_type + article, 'w')
     print('writing summaries for ', article)
     for sentence in top_sent_rank:
         summary_file.write(sentence)
@@ -224,7 +224,7 @@ if __name__ == '__main__':
     # for article in entertainment_articles_list[:]:
     #     document_path_list = ('BBC News Summary/News Articles/entertainment/' + article)
     #     # summary_path_list = ('BBC News Summary/Summaries/entertainment/' + article)
-    #     counter += 1
+    #     counter += 1tech
     #     print("Article #" + str(counter) + ': ' + article)
     #     NP_chunk_build(document_path_list, article)
     # NP_del_list = idf_calc(counter)
@@ -257,22 +257,25 @@ if __name__ == '__main__':
 
     document_path_list = []
     counter = 0
+    summary_type = 'tech/'
     for article in tech_articles_list[:]:
-        document_path_list = ('BBC News Summary/News Articles/tech/' + article)
+        document_path_list = ('BBC News Summary/News Articles/' + summary_type + article)
         # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
         counter += 1
         # print("Article #" + str(counter) + ': ' + article)
         NP_chunk_build(document_path_list, article)
+    
     NP_del_list = idf_calc(counter)
     print('Appear everywhere: \n', NP_del_list)
     # chunk_print(doc_chunk_dict)
 
     for article in tech_articles_list[:10]:
-        document_path_list = 'BBC News Summary/News Articles/tech/' + article
+        document_path_list = 'BBC News Summary/News Articles/' + summary_type + article
         sentence_chunk_pair_list = sentence_pairing(document_path_list, article)
         # print('sentence_chunk_pair_list: \n', sentence_chunk_pair_list)
         T5_sent_ranked = rank_sentence(sentence_chunk_pair_list, 5)
-        write_summary(T5_sent_ranked, article)
+        # print(T5_sent_ranked)
+        write_summary(T5_sent_ranked, summary_type, article)
 
 
     # sorted_freq = sorted(doc_freq.items(), key=operator.itemgetter(1), reverse=True)
