@@ -123,14 +123,19 @@ def NP_chunk_build(document_path_list, article, doc_chunk_dict):
             doc_chunk_dict[key] = [value]
     # print(current_doc_chunk_dict)
 
+
+# Boost via length of NP
 def sent_tfidf_calc(chunk_list):
     tfidf_sum = 0.0
     for chunk in chunk_list:
-        tfidf_sum += chunk[1]
+        tfidf = chunk[1]
+        NP = chunk[0].split('**')
+        boost = len(NP)
+        tfidf_sum += tfidf * (tfidf ** boost)
     return tfidf_sum
 
 
-## 
+## sentence_pairing sets tfidf to be paired
 def sentence_pairing(document_path_list, article, doc_chunk_dict):
     document = open(document_path_list, 'r')
     text = document.readlines()
@@ -158,9 +163,9 @@ def sentence_pairing(document_path_list, article, doc_chunk_dict):
                 s_detail = doc[2:]
                 for _, sid in s_detail:
                     if sid in doc_chunk_holder.keys():
-                        doc_chunk_holder[sid].append([key, values[1]])
+                        doc_chunk_holder[sid].append([key, values[0]])
                     else:
-                        doc_chunk_holder[sid] = [[key, values[1]]]
+                        doc_chunk_holder[sid] = [[key, values[0]]]
     for sent, sid in sentence_dict.items():
         if sid in doc_chunk_holder.keys():
             tfidf_sum = sent_tfidf_calc(doc_chunk_holder[sid])
@@ -179,7 +184,7 @@ def rank_sentence(sentence_dict, top):
         for NP in sent_group:
             sort_dict[sent] = [len(NP)]
     for NP, value in sort_dict.items():
-        value.append(sentence_dict[NP][0])
+        value.append(float(sentence_dict[NP][0])*float(value[0]))
     sorted_list = sorted(sort_dict.items(), key=operator.itemgetter(1), reverse=True)[:top]
     sorted_dict = dict(sorted_list)
     return sorted_dict
@@ -189,7 +194,8 @@ def write_summary(top_sent_rank, summary_type, article):
     summary_file = open(summary_path + summary_type + article, 'w')
     print('writing summaries for ', article)
     for sentence in top_sent_rank:
-        summary_file.write(sentence)
+        write_sentence = sentence + '\n\n'
+        summary_file.write(write_sentence)
 
 
 def category_summary(summary_type):
@@ -197,7 +203,7 @@ def category_summary(summary_type):
     counter = 0
     article_list = os.listdir(file_path + summary_type)
     doc_chunk_dict = {}
-
+    # article_list = ['014.txt']
     for article in article_list[:]:
         document_path_list = (file_path + summary_type + article)
         # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
@@ -208,19 +214,20 @@ def category_summary(summary_type):
     NP_del_list = idf_calc(counter, doc_chunk_dict)
     print('Appear everywhere: \n', NP_del_list)
     # chunk_print(doc_chunk_dict)
-    print('calculated_idf')
+    # print('calculated_idf')
     for key, values in doc_chunk_dict.items():
         if key in all_chunk_dict.keys():
             all_chunk_dict[key].append([summary_type[:-1], values])
         else:
             all_chunk_dict[key] = [summary_type[:-1], values]
 
-    for article in article_list[:10]:
+    for article in article_list[:]:
+        print("Article: ", article)
         document_path_list = file_path + summary_type + article
         sentence_chunk_pair_list = sentence_pairing(document_path_list, article, doc_chunk_dict)
         # print('sentence_chunk_pair_list: \n', sentence_chunk_pair_list)
         T5_sent_ranked = rank_sentence(sentence_chunk_pair_list, 5)
-        # print(T5_sent_ranked)
+        print(T5_sent_ranked)
         write_summary(T5_sent_ranked, summary_type, article)
 
 
