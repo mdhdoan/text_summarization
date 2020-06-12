@@ -131,7 +131,7 @@ def sent_tfidf_calc(chunk_list):
         tfidf = chunk[1]
         NP = chunk[0].split('**')
         boost = len(NP)
-        tfidf_sum += tfidf * (tfidf ** boost)
+        tfidf_sum += tfidf * (2 ** boost)
     return tfidf_sum
 
 
