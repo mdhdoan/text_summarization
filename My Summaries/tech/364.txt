@@ -1,0 +1,10 @@
+Those with digital music players can select which podcasts they like, and subscribe - for free - to that show's "feed".
+
+Ian Fogg, Jupiter Research analyst, thinks there could be potential for business, but it could take an interesting turn if big companies, like Apple and Microsoft, get involved.
+
+He designed the format called RSS (Really Simple Syndication), which gives web users an easy way to keep updated automatically on sites they like.
+
+Podcasts rely on his technology because it is the way they are distributed.
+
+Others say it is just another element of setting media free from big companies and letting people be creative.
+

@@ -1,0 +1,10 @@
+Details of the chip were released at the International Solid State Circuits Conference in San Francisco.
+
+IBM said Cell was "OS neutral" and would support multiple operating systems simultaneously but designers would not confirm if Microsoft's Windows was among those tested with the chip.
+
+While the PlayStation 3 is likely to be the first mass-market product to use Cell, the chip's designers have said the flexible architecture means that it would be useful for a wide range of applications, from servers to mobile phones.
+
+Sony, IBM and Toshiba, who have been working on the Cell processor for three years, unveiled the chip on Monday.
+
+The Cell's specifications suggest the PlayStation 3 will offer a significant boost in graphics capabilities but analysts cautioned that not all the features in a product announcement will find their way into systems.
+

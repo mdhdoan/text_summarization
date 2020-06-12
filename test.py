@@ -212,7 +212,7 @@ def category_summary(summary_type):
         NP_chunk_build(document_path_list, article, doc_chunk_dict)
     
     NP_del_list = idf_calc(counter, doc_chunk_dict)
-    print('Appear everywhere: \n', NP_del_list)
+    # print('Appear everywhere: \n', NP_del_list)
     # chunk_print(doc_chunk_dict)
     # print('calculated_idf')
     for key, values in doc_chunk_dict.items():
@@ -222,12 +222,12 @@ def category_summary(summary_type):
             all_chunk_dict[key] = [summary_type[:-1], values]
 
     for article in article_list[:]:
-        print("Article: ", article)
+        # print("Article: ", article)
         document_path_list = file_path + summary_type + article
         sentence_chunk_pair_list = sentence_pairing(document_path_list, article, doc_chunk_dict)
         # print('sentence_chunk_pair_list: \n', sentence_chunk_pair_list)
         T5_sent_ranked = rank_sentence(sentence_chunk_pair_list, 5)
-        print(T5_sent_ranked)
+        # print(T5_sent_ranked)
         write_summary(T5_sent_ranked, summary_type, article)
 
 

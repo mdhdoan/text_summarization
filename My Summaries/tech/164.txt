@@ -1,0 +1,10 @@
+Bill Thompson is a regular commentator on the BBC World Service programme Go Digital.
+
+Companies like SecureWave, for example, can restrict the use of USB ports just to authorised devices or even to an individual's personal memory card.
+
+Whether it is external hackers breaking in because of poor system security or internal staff abusing the access they get as part of their job, the issue is the same: how do we make sure that our personal data is not abused?
+
+It has been clear for years that the real danger in paying for goods online with a credit card is not that the number will be intercepted in transit but that the shop you are dealing with will be hacked.
+
+The real danger is not what happens to your data as it crosses the net, argues analyst Bill Thompson.
+

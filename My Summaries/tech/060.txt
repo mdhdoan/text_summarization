@@ -1,0 +1,10 @@
+They affect Windows programs, including Internet Explorer (IE), media player and instant messaging.
+
+Microsoft has warned PC users to update their systems with the latest security fixes for flaws in Windows programs.
+
+Its latest releases came the week that the company announced it was to buy security software maker Sybari Software as part of Microsoft's plans to make its own security programs.
+
+Stephen Toulouse, a Microsoft security manager, said the flaws were known about, and although the firm had not seen any attacks exploiting the flaw, he did not rule them out.
+
+Microsoft announces any vulnerabilities in its software every month.
+

@@ -1,0 +1,10 @@
+"The images have three dimensions and I had to find a way of reading them myself," Mr Wong told the BBC News website.
+
+Mr Wong eventually hit upon the idea of translating individual colours into music, and enlisted the help of a computer graphics specialist and another student to do the programming work.
+
+Mr Wong has been blind from the age of seven and he thinks that having a "colour memory" makes the software more useful than it would be to a scientist who had never had any vision.
+
+The colour to music software has not yet been made available commercially, and Mr Wong believes that several people would have to work together to make it viable.
+
+Mr Wong says the application is still very much in its infancy and is only useful for reading images that have been created digitally.
+

@@ -1,0 +1,10 @@
+The file, nicknamed Skulls, is thought to have surfaced on shareware sites where people can pick up free add-ons, such as wallpaper, games and ringtones, for their phones Symbian said that it was not sure if the damage Skulls does was intentional or simply a result of bad programming.
+
+The firm has produced guidance for users caught out to help them remove the program and get their phone working again.
+
+The program is masquerading as software that creates new background images and themes for the main screen of the 7610 phone.
+
+The program is only the latest in a series of viruses produced to attack mobile phones.
+
+Once installed the program replaces all the icons on the main page with skulls and replaces all the working applications, such as contacts, calendar, notebook etc with non-working versions so the phone becomes almost useless.
+

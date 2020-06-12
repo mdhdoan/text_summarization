@@ -1,0 +1,10 @@
+"At the moment we have interactive gaming and a limited form of interactive TV which usually means allowing audiences to vote on shows.
+
+"The BBC is allowing us access to the material so that we can prove the technology and the principles," explained Dr Doug Williams of BT, who will be NM2's technical project manager.
+
+This project is about teaching the machine to look at content like Lego blocks that can be reassembled to make perfect sense," he said.
+
+The three-year project will work on seven productions as it develops a set of software tools that will allow viewers to edit content to their needs.
+
+It will be re-engineered to allow people to choose a variety of edited versions.
+

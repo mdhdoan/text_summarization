@@ -1,0 +1,10 @@
+The US has pushed Japan off the top of the supercomputing chart with IBM's prototype Blue Gene/L machine.
+
+The Blue Gene/L machine that will be completed next year will be five million times faster.
+
+Since the first supercomputer, the Cray-1, was installed at Los Alamos National Laboratory, US, in 1976, computational speed has leaped 500,000 times.
+
+"Next year with the final Blue Gene, four times what it is this year, it is going to be a real step up and will be hard to beat," said Erich Strohmaier, one of the co-founders of the Top500 list.
+
+The Top 500 list was announced on Monday and officially charts the fastest computers in the world.
+

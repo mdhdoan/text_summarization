@@ -1,0 +1,10 @@
+According to a survey conducted by security firm Mirapoint and market research company the Radicati Group, nearly a third of e-mail users have clicked on links in spam messages.
+
+Spammers will deliberately misspell a word or use digits instead of letters in an attempt to by-pass anti-spam software, said Graham Cluley, senior technology consultant for security firm Sophos.
+
+Spammers are increasingly hooking into whatever happens to be flavour of the month, according to security firm Clearswift.
+
+But rather than finding a companion, users who click on such mail will find themselves redirected to porn sites, where they run the risk of downloading spyware on to their PC.
+
+Sexually explicit terms make up 14% of security firm Sophos' top 50 word that spammers most commonly try to disguise in order to beat anti-spam filters.
+

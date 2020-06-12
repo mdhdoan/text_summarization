@@ -1,0 +1,10 @@
+In a statement announcing the desire to seek bankruptcy protection the company said it: "could not continue to contend with legal maneuvers (sic) by a number of companies across the country, including Microsoft, and still run a viable business."
+
+The lawsuit was brought by Microsoft and New York attorney general Eliot Spitzer who alleged that Mr Richter and his accomplices sent billions of spam messages through 514 compromised net addresses in 35 countries.
+
+According to Microsoft the messages were sent via net addresses owned by the Kuwait Ministries of Communication and Finance, several Korean schools, the Seoul Municipal Boramae Hospital, and the Virginia Community College System.
+
+In its Chapter 11 filing OptInRealBig claimed it had assets of less than $10m (£5.29m) but debts of more than $50m which included the $46m that Microsoft is seeking via its lawsuit.
+
+Microsoft is seeking millions in dollars in damages from OptInRealBig under anti-spam laws that impose penalties for every violation.
+

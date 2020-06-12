@@ -1,0 +1,10 @@
+A survey of wi-fi networks in London, Frankfurt, New York and San Francisco by RSA Security found more than a third had basic security features turned off.
+
+RSA said that 26% of wi-fi networks found London used default settings compared to 30% in Frankfurt, 31% in New York and 28% in San Francisco.
+
+"Accidental or intentional connection to a corporate network can bring with it a series of security issues including loss of confidential data and installation of malicious code," he said.
+
+By contrast last year's survey found that 15% of firms had failed to take basic steps to improve security.
+
+Wireless or wi-fi networks have become hugely popular over the last few years in offices because they are easy to set up and make going online much more convenient.
+

@@ -1,0 +1,10 @@
+He added that the legal attacks on BitTorrent had driven people away from sites such as Suprnova but many users had simply migrated to other tracker listing sites many of which have seen huge increases in traffic.
+
+One of the sites shut down by the legal campaign was suprnova.org which helped boost the popularity of the BitTorrent system by checking that trackers led to the movies or TV programmes they claimed to.
+
+Dr Johan Pouwelse, a researcher at the Delft University of Technology who studies peer-to-peer networks, said Exeem was the next evolution in file-sharing systems.
+
+One site behind the success of the BitTorrent file-swapping system is producing its own software that avoids the pitfalls of the earlier program.
+
+In late December movie studios launched a legal campaign against websites that helped people swap pirated movies using the BitTorrent network.
+

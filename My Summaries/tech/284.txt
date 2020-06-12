@@ -1,0 +1,10 @@
+The security firm says users should avoid clicking on or accessing playlist files - which have the file extension of .pls or .m3u - which have come from unknown sources.
+
+Users of Apple's music jukebox iTunes need to update the software to avoid a potential security threat.
+
+A new version of iTunes is now available from the Apple website which solves the problem.
+
+The problem affects all users of iTunes - Windows and Mac OS - running versions 4.7 and earlier.
+
+Users can automatically upgrade iTunes by opening the "look for updates" window in the program.
+

@@ -1,0 +1,10 @@
+On 21 October, the George W Bush website began using the services of a company called Akamai to ensure that the pages, videos and other content on its site reaches visitors.
+
+Since then people outside the US trying to browse the site get a message saying they are not authorised to view it.
+
+He said the site may see no reason to distribute content to people who will not be voting next week.
+
+By contrast Netcraft's four monitoring stations in the US managed to view the site with no problems.
+
+The site can still be seen using anonymous proxy services that are based in the US.
+

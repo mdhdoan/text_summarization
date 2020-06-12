@@ -1,0 +1,10 @@
+The software buries itself in computers and can collect a wide range of information.
+
+It also requires companies and websites to disclose whether their systems will install spyware.
+
+The state's Consumer Protection Against Spyware Act bans the installation of software that takes control of another computer.
+
+From 1 January, a new law is being introduced to protect computer users from software known as spyware.
+
+Currently users wanting protection from spyware have turned to free programs such as Spybot and Ad-Aware.
+

@@ -1,0 +1,10 @@
+Intel has said it has found a way to put a silicon-based laser on a chip, raising hopes of much faster networks.
+
+But the Intel researchers have found a way to suck away these errant electrons and turn silicon into a material that can both generate and amplify laser light.
+
+The result could be the close integration of the fibre optic cables that carry data as light with the computer chips that process it.
+
+Dr Paniccia said the work was the one of several steps needed if silicon was to be used to make components that could carry and process light in the form of data pulses.
+
+The Intel researchers said products exploiting the breakthrough should appear by the end of the decade.
+

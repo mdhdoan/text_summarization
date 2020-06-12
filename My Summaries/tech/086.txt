@@ -1,0 +1,10 @@
+"The Remove Hidden Data add-in is a tool that you can use to remove personal or hidden data that might not be immediately apparent when you view the document in your Microsoft Office application," says the instructions on Microsoft's website.
+
+Microsoft recommends that the tool is used before people publish any Word document.
+
+Writing a Microsoft Word document can be a dangerous business, according to document security firm Workshare.
+
+A tool for Apple machines running Word is not available.
+
+Microsoft, however, does provide an add-on tool for Windows PCs that fixes the problem.
+

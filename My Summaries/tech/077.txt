@@ -1,0 +1,10 @@
+So-called spyware was proving very popular with criminals because it allowed them to take over machines for their own ends, to steal key data from users or to hijack web browsing sessions to point people at particular sites.
+
+Former virus writer Marek Strihavka, aka Benny from the 29A virus writing group, recently quit the malware scene partly because it was being taken over by spyware writers, phishing gangs, and spammers who are more interested in money rather than the technology.
+
+Few of the malicious programs written by hi-tech thieves are cleverly written, many are much more pragmatic and use tried and tested techniques to infect machines or to trick users into installing a program or handing over important data.
+
+The shift is happening as tech savvy criminals turn to technology to help them con people out of cash, steal valuable data or take over home PCs.
+
+Instead programs are now crafted for directly criminal ends and firms are tightening up networks with defences to combat the new wave of malicious code.
+

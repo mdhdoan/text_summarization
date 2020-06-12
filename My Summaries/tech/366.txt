@@ -1,0 +1,10 @@
+The IETF is a large international community of network designers, operators, vendors, and researchers working on the evolution of the net's architecture and the way this information is sent and received.
+
+With broadband take-up growing, services like voice and TV will open up interesting challenges for the net.
+
+That renewed growth is also being buoyed by emerging economies, like China, which are showing fast uptake of broadband net and other technologies.
+
+At Cern, Dr Carpenter helped pioneer advanced net applications during the development of the world wide web, so he is well-placed to take on such a task.
+
+The number of broadband subscribers via DSL (Digital Subscriber Line) doubled in a year to 13 million, according to figures released at the end of 2004.
+

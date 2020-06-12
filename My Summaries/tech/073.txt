@@ -1,0 +1,10 @@
+BT Openzone, which operates a vast proportion of public hotspots in the UK, told the BBC News website that it made every effort to make its wi-fi secure.
+
+"This means that users' personal information and data, logon usernames and passwords are protected and secure," said Mr Clark.
+
+"Users need to be wary of using their wi-fi enabled laptops or other portable devices in order to conduct financial transactions or anything that is of a sensitive or personal nature," said Professor Brian Collins, head of information systems at Cranfield University.
+
+"We also advocate the use of personal firewalls to ensure that only authorised users can have access and that data cannot be intercepted."
+
+But many home and company wi-fi networks are left unprotected and can be "sniffed out" and hi-jacked by anyone with the correct equipment.
+

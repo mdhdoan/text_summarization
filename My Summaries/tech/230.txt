@@ -1,0 +1,10 @@
+When interrogated with a mobile phone, the posters pass on a number that people can call to get information about the safest route home.
+
+The posters will automatically beam information to any phone equipped with an IR port that is held close to the glowing red icon on the poster.
+
+"We started with infra-red because there are a huge number IR phones out there," said Rachel Harker, spokeswoman for Hypertag which makes the technology fitted to the posters.
+
+"It's a well established technology."
+
+Sited at busy underground stations, the posters are fitted with an infra-red port that can beam information directly to a handset.
+

@@ -1,0 +1,10 @@
+MMO2, the UK-based operator with services in the UK, Ireland and Germany, has opted for technology based on the High Speed Downlink Packet Access (HSDPA) standard.
+
+The system is not available commercially yet, but Motorola, the US mobile handset and infrastructure maker, held a clinic for mobile operators on HSDPA (High Speed Downlink Packet Access), a high-speed, high bandwidth technology available now.
+
+Nokia and Canada-based wireless communication products company Sierra Wireless recently agreed to work together on High Speed Downlink Packet Access.
+
+We are "expanding our network and deploying EV-DO technology to meet customer demand for faster wireless speeds," said Oliver Valente, Sprint's vice president for technology development, when the contract was announced.
+
+Siemens' plans for a one gigabit network may be more than a user needs today, but Christoph Caselitz, president of the mobile networks division at the firm says that: "By the time the next generation of mobile communication debuts in 2015, the need for transmission capacities for voice, data, image and multimedia is conservatively anticipated to rise by a factor of 10."
+

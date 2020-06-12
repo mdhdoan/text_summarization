@@ -1,0 +1,10 @@
+Copies of the messages seen by the BBC News website had bright yellow and green backgrounds.
+
+He said behavioural systems that monitor what users do can help to spot when viruses have penetrated organisations and have started hunting for other victims.
+
+Tim Warner, spokesman for anti-virus firm Finjan, said: "You have people getting very creative now to deliver the virus and get it propagating."
+
+Those clicking on the poisoned links in e-mail messages sent out by infected machines may fall victim to the virus.
+
+Like many other recent viruses, Bofra plunders the address book in Microsoft Outlook for e-mail addresses and scours other files on an infected machine for fresh target addresses.
+

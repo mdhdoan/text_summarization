@@ -1,0 +1,10 @@
+The game engine is the core component of a video game because it handles graphics rendering, game AI, and how objects behave and relate to each other in a game.
+
+As more tools for self-expression are given to the person on the street, enabling people to take photos with a phone and upload them to the web for instance, creativity will become an integral part of technology.
+
+Using a 3D graphics engine, the type commonly used in gaming, Bafta-winning artists Langlands & Bell have created a virtual, story-based, 3D model of Brussels' Coudenberg Cellars.
+
+It was also used in 2003 in Encounter, an urban-based, pervasive game that combined both virtual play in conjunction with physical, on-the-street action.
+
+They are so time-consuming and expensive to create, the engines can be licensed out to handle other graphics-intensive games.
+

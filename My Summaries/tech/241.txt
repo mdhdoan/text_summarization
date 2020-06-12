@@ -1,0 +1,10 @@
+Unlike most peer-to-peer programs BitTorrent works by sharing a file, which could be anything from a legitimate digital photo to a copied movie, among multiple users at the same time.
+
+The Motion Picture Association of America wants to stop people using the program BitTorrent to swap movies.
+
+The growth in broadband has made it quicker for people to download movies and the industry fears that if it does not take action now, it could suffer the same downturn as the music industry.
+
+The movie industry hopes that suing the people who run the trackers will cut BitTorrent users off from illegal movies at source.
+
+The industry is targeting people who run websites which provide information and internet links to movies which have been copied or filmed in cinemas.
+

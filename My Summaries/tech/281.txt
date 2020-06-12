@@ -1,0 +1,10 @@
+Also released this year was the Mosquito game for Symbian phones which surreptitiously sends messages to premium rate numbers, and in November the Skulls Trojan came to light which can cripple phones.
+
+On the positive side, Finnish security firm F-Secure said that 2004 was the best-ever year for the capture, arrest and sentencing of virus writers and criminally-minded hackers.
+
+In June, the Cabir virus was discovered that can hop from phone to phone using Bluetooth short-range radio technology.
+
+In the past, threats to smart phones have been largely theoretical because the viruses created to cripple phones existed only in the laboratory rather than the wild.
+
+The emergence of the first proper virus for mobile phones was also seen in 2004.
+

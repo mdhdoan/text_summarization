@@ -1,0 +1,10 @@
+But Graham Cluley, senior consultant at security firm Sophos, told the BBC News website that it was a positive decision.
+
+Microsoft says it is clamping down on people running pirated versions of its Windows operating system by restricting their access to security features.
+
+Microsoft's Windows operating system is heavily exploited by virus writers because it is so widespread and they are constantly seeking out new security loopholes to take advantage of.
+
+The scheme meant that anyone with pre-installed copies of the operating system in PCs bought before November could replace counterfeit versions of Windows XP with legal ones for free.
+
+Either PCs detect updates automatically or users manually download fixes through Microsoft's site.
+

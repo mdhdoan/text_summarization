@@ -1,0 +1,10 @@
+At the recent Consumer Electronics Show in Las Vegas products with UWB chips built-in got their first public airing.
+
+One of the more likely uses of UWB is to make it possible to send DVD quality video images wirelessly to TV screens or to let people beam music to media players around their home.
+
+Prior to its adoption as a way for gadgets and computers to communicate, UWB was used as a sensing technology.
+
+The government's wireless watchdog is seeking help on the best way to regulate the technology behind such networks called Ultra Wideband (UWB).
+
+The technology has the potential to transmit hundreds of megabits of data per second.
+

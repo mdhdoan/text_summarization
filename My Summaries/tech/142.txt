@@ -1,0 +1,10 @@
+Clark Boyd is technology correspondent for The World, a BBC World Service and WGBH-Boston co-production.
+
+The idea is to use open-source software - software can be used by anyone without commercial restraint - and a far-flung network of talent to create a system that links those in need with those who can help.
+
+"In every rural community, there's at least one person who has access to a mobile phone, or has a mobile phone, and can receive messages."
+
+In the near future, the group says it hopes to take in messages from people in affected areas, and use human moderators to take actions based on the content of those messages.
+
+Last week, he sent out e-mail messages asking for help in creating such a system for Asia.
+

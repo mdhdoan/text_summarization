@@ -1,0 +1,10 @@
+While users play the game, the worm spends its time using the machine to search for new victims to infect on nearby networks.
+
+Users are being warned about a Windows virus that poses as the hugely popular Tetris game.
+
+"If your company has a culture of allowing games to be played in the office, your staff may believe this is simply a new game that has been installed - rather than something that should cause concern," said Graham Cluley, spokesman for anti-virus firm Sophos.
+
+As the game starts up the worm also starts a music file to accompany it.
+
+At the same time the virus starts scouring networks for other vulnerable machines.
+

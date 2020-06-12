@@ -1,0 +1,10 @@
+One of the more likely uses of UWB is to make it possible to send DVD quality video images wirelessly to TV screens or to let people beam music to media players around their home.
+
+At the mobile phone conference 3GSM in Cannes last month Samsung demonstrated a phone using UWB technology from Freescale.
+
+The first products using UWB technology from Intel are due to hit the market later this year.
+
+Ultra high speed wi-fi connections moved closer to reality on Thursday when Intel said it would list standards for the technology later this year.
+
+The technology has the potential to transmit hundreds of megabits of data per second.
+

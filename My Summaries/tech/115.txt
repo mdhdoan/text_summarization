@@ -1,0 +1,10 @@
+The technology would allow digital people and other computer-generated elements to be combined with the actual view seen by tourists as they walk around an historical site.
+
+The old-fashioned audio tour of historical places could soon be replaced with computer-generated images that bring the site to life.
+
+The software capable of doing this has been developed by a UK company, 2d3.
+
+The Lifeplus project is part of the EU's Information Society Technologies initiative aimed at promoting user-friendly technology and enhancing European cultural heritage.
+
+The camera captures the view and feeds it to software on the computer where the visitor's viewpoint is combined with animated virtual elements.
+
