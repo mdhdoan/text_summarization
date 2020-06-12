@@ -211,7 +211,7 @@ def category_summary(summary_type):
         # print("Article #" + str(counter) + ': ' + article)
         NP_chunk_build(document_path_list, article, doc_chunk_dict)
     
-    NP_del_list = idf_calc(counter, doc_chunk_dict)
+    # NP_del_list = idf_calc(counter, doc_chunk_dict)
     # print('Appear everywhere: \n', NP_del_list)
     # chunk_print(doc_chunk_dict)
     # print('calculated_idf')
