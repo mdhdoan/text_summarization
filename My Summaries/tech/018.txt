@@ -1,10 +1,10 @@
-The PlayStation 3 is expected in 2006 but developers are expecting to get prototypes early next year to tune games that will appear on it at launch.
-
-The chip has also been refined to be able to handle the detailed graphics common in games and the data demands of films and broadband media.
-
 Special effects and graphics designed for films could be ported for use directly in a video game, Sony told an audience at the E3 exhibition in Los Angeles last year.
 
-Details of the chip will be released at the International Solid State Circuits Conference in San Francisco.
+The PlayStation 3 is expected in 2006 but developers are expecting to get prototypes early next year to tune games that will appear on it at launch.
 
-Sony has said the Cell processor could be used to bridge the gap between movies and video games.
+Sony, IBM and Toshiba, who have been working on the Cell processor for three years, will unveil the chip at a technology conference.
+
+"In the future, all forms of digital content will be converged and fused onto the broadband network," said Ken Kutaragi, chief operating officer of Sony, said last year.
+
+Details of the chip designed to power Sony's PlayStation 3 console will be released in San Francisco on Monday.
 

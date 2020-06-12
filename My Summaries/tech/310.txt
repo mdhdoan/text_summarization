@@ -1,10 +1,10 @@
 Its browser is used by an estimated 10 million people on a variety of operating systems and a number of different platforms.
 
+Net browser Opera 8.0, due for official release at the end of next month, will be "the most accessible browser on the market", according to its authors.
+
 The voice features, based on IBM technology, are currently only available in the Windows version.
 
 Opera can also magnify text by up to 10 times and users can create "style sheets", its developers say.
 
 "People are not always in a situation where they can access a keyboard, so this makes the web a more hands-free experience."
-
-The company points out that this will also appeal to anyone using Opera with a handheld device.
 

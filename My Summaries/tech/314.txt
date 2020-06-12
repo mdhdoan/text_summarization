@@ -1,10 +1,10 @@
 "January is clearly a month when consumers are less motivated to purchase financial products or put money into dubious financial opportunities," said Neil Hammerton, managing director of Email Systems.
 
+The figures, from e-mail management firm Email Systems, will alarm firms attempting to cope with the amount of spam in their in-boxes.
+
 It is no longer just multi-nationals that are in danger of so-called denial of service attacks, in which websites are bombarded by requests for information and rendered inaccessible.
 
 Virus mail accounts for just over 15% of all e-mail traffic analysis by the firm has found.
 
-The figures, from e-mail management firm Email Systems, will alarm firms attempting to cope with the amount of spam in their in-boxes.
-
-While virus traffic has slowed down, denial of service attacks are on the increase according to the firm.
+The type of spam currently being sent has subtlety altered in the last few months, according to Email Systems analysis.
 

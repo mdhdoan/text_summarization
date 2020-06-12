@@ -1,10 +1,10 @@
-Those with digital music players can select which podcasts they like, and subscribe - for free - to that show's "feed".
-
 Ian Fogg, Jupiter Research analyst, thinks there could be potential for business, but it could take an interesting turn if big companies, like Apple and Microsoft, get involved.
+
+Others say it is just another element of setting media free from big companies and letting people be creative.
 
 He designed the format called RSS (Really Simple Syndication), which gives web users an easy way to keep updated automatically on sites they like.
 
-Podcasts rely on his technology because it is the way they are distributed.
+Because of the way podcasts work, based on RSS, the latest podcasts which people can select mean that they are ready-made targets.
 
-Others say it is just another element of setting media free from big companies and letting people be creative.
+"How I believe this will work, is to create a network that, in aggregation, will have enough numbers to support a return on investment for the advertisers and for the podcasters.
 

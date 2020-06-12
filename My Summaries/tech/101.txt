@@ -6,5 +6,5 @@ He said the site may see no reason to distribute content to people who will not 
 
 By contrast Netcraft's four monitoring stations in the US managed to view the site with no problems.
 
-The site can still be seen using anonymous proxy services that are based in the US.
+Netcraft said that since the early hours of 25 October attempts to view the site through its monitoring stations in London, Amsterdam and Sydney failed.
 

@@ -1,10 +1,10 @@
-The worst of the attack now seems to be over as a search conducted on the morning of the 22 December produced only 1,440 hits for sites showing the text used in the defacement message.
-
-Security firms estimate that about 1m websites run their discussion groups and forums with the open source phpBB program.
-
 In July a variant of the MyDoom virus slowed down searches on Google as the program flooded the search site with queries looking for new e-mail addresses to send itself to.
 
-People using the sites hit by Santy will not be affected by the worm.
+The worst of the attack now seems to be over as a search conducted on the morning of the 22 December produced only 1,440 hits for sites showing the text used in the defacement message.
+
+Thousands of website bulletin boards have been defaced by a virus that used Google to spread across the net.
 
 The worm replaces chat forums with a webpage announcing that the site had been defaced by the malicious program.
+
+People using the sites hit by Santy will not be affected by the worm.
 

@@ -1,10 +1,10 @@
-Already there have been four incidents in which Windows viruses have disrupted networks of cash machines running the Microsoft operating system.
-
-For many years the venerable IBM operating system, known as OS/2, has been the staple software used to power many of the 1.4m cash machines in operation around the world.
-
 US laws that demand disabled people get equal access to information will also force banks to make their cash machines more versatile and able to present information in different ways.
+
+Already there have been four incidents in which Windows viruses have disrupted networks of cash machines running the Microsoft operating system.
 
 Risks of infection were small because the data networks that connect UK cash machines together and the operators of the ATMs themselves were a much smaller and tightly-knit community than in the US where viruses have struck.
 
-Already, he said, there have been four incidents in which cash machines have been unavailable for hours due to viruses affecting the network of the bank that owns them.
+For many years the venerable IBM operating system, known as OS/2, has been the staple software used to power many of the 1.4m cash machines in operation around the world.
+
+Banks were more likely to be worried about internal networks being overwhelmed by worms and viruses and customers not being able to get cash out at all, he added.
 

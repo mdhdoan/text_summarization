@@ -1,10 +1,10 @@
 "The Remove Hidden Data add-in is a tool that you can use to remove personal or hidden data that might not be immediately apparent when you view the document in your Microsoft Office application," says the instructions on Microsoft's website.
 
+Sensitive information inadvertently leaked in documents includes confidential contractual terms, competitive information that rivals would be keen to see and special deals for key customers, said Andrew Pearson, European boss of Workshare which commissioned the research.
+
 Microsoft recommends that the tool is used before people publish any Word document.
 
-Writing a Microsoft Word document can be a dangerous business, according to document security firm Workshare.
+The discovery of this hidden information could prove embarrassing for companies if, for instance, those tendering for contracts found out about the changes to terms of a deal being negotiated.
 
-A tool for Apple machines running Word is not available.
-
-Microsoft, however, does provide an add-on tool for Windows PCs that fixes the problem.
+Workshare surveyed firms around the world and found that, on average, 31% of documents contained legally sensitive information but in many firms up to three-quarters fell in to the high risk category.
 

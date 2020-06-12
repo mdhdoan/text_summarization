@@ -1,10 +1,10 @@
-The game requires users to build and maintain their vehicles and to monitor and analyse performance using data from a variety of outputs, before and after racing.
-
 Traditionally schools have eschewed mainstream games in favour of used so-called edu-tainment software in a belief that such packages help to make learning fun, she found in her research.
 
-'Lite' versions of existing games could be the way forward and would overcome one of the biggest hurdles - persuading developers to write for the educational market.
+The game requires users to build and maintain their vehicles and to monitor and analyse performance using data from a variety of outputs, before and after racing.
 
 "Pupils used the statistics to work out the best way to build their cars and the online message board to share ideas and support each other," said Ben Williamson, a researcher at Futurelab charged with testing the game in real schools.
 
 The company set out to write something that had all the look and feel of a commercial game but with an educational and learning element.
+
+Most game firms are too busy turning a profit in the lucrative commercial market to consider developing games for use in schools but Liverpool-based games firm Lateral Visions saw a gap in the market.
 

@@ -1,10 +1,10 @@
 Companies like Microsoft and Sony believe that there is a lot of money to be made by putting a computer underneath the TV of every household and then offering services such as music and video downloads, as well as giving an individual access to all the media they already own in one place.
 
+Sony will be using the chip inside its PlayStation 3 console, and its dominance of the games market means that it now has a lot of power to dictate the future of computer and gaming platforms.
+
 By creating a radically new architecture, and using that architecture in a games console that is sure to be a huge seller, they hope that the Cell processor can become the dominant technology in the living room, shutting out their rivals.
 
 Microsoft is going to be pushing its Xbox 2 as hard as possible to make sure that its technology, not Sony's, will be under your tree next Christmas.
 
 Sony and IBM want to make sure that the dominance of the PC market enjoyed by Microsoft and Intel is not allowed to extend to this market.
-
-Both companies believe that increasing the capabilities of games consoles, to make them as powerful as PCs, will make the technology accessible enough to persuade buyers to give them pride of place on the video rack.
 

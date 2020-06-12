@@ -2,9 +2,9 @@ Upload speeds - the speed at which information is sent from a PC via broadband -
 
 He said that a limited number of people with those connections consistently received speeds of 40Mbps.
 
-"These speed increases will give people the opportunity to do a lot more with their broadband connections," he said.
+Many BT customers will now have download speeds of 2Mbps, although there are usage allowances of between one gigabyte and 30 gigabytes a month.
 
-The increased speeds will come at no extra charge and follows a similar move by internet service provider AOL.
+"Britain is now broadband Britain," said Duncan Ingram, BT's managing director, broadband and internet services.
 
 In the last few months, many rival ISPs have begun to offer 2Mbps services, including AOL, Plusnet and UK Online.
 

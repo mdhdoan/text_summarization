@@ -1,10 +1,10 @@
-Asymmetric Digital Subscriber Line technology lets ordinary copper phone lines support high data speeds.
-
 The 600,000 connections take the total number of people in the UK signing up for broadband from BT to almost 3.3 million.
 
 There are now more than 300 different firms offering CPS services and the percentage of people using BT lines for voice calls has shrunk to 55.4%.
 
-By the end of September more than 4.2 million phone lines were using so-called Carrier Pre-Section (CPS) services, such as TalkTalk and One.Tel, which route phone calls across non-BT networks from a local exchange.
-
 BT reports that more people signed up for broadband in the last three months than in any other quarter.
+
+Part of the surge in people signing up was due to BT stretching the reach of ADSL - the UK's most widely used way of getting broadband - beyond 6km.
+
+The numbers of people signing up to broadband include those that get their service direct from BT or via the many companies that re-sell BT lines under their own name.
 

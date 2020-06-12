@@ -1,5 +1,3 @@
-Bill Thompson is a regular commentator on the BBC World Service programme Go Digital.
-
 Much of the really useful software we use every day, programs like the Apache web server, the GNU/Linux operating system and the fearsomely popular Firefox browser, is developed outside company structures by people who do not have legal departments to check for patent infringements.
 
 Even this system breaks down, of course, as Microsoft found out last year when they initially lost a case brought by Eolas which claimed that Internet Explorer (and other browsers) infringed an Eolas patent.
@@ -7,4 +5,6 @@ Even this system breaks down, of course, as Microsoft found out last year when t
 Yet if the new directive is nodded through at the next meeting of one of the EU's ministerial councils, as seems likely, it will allow programs to be patented in Europe just as they are in the US.
 
 In the US you cannot build a system that stores customer credit card details so that they can pay without having to re-enter them unless Amazon lets you, because they hold the patent on "one-click" online purchase.
+
+If it gets its way, the Dutch government will conclude its presidency of the European Union by pushing through a controversial measure that has been rejected by the European Parliament, lacks majority support from national governments and will leave millions of European citizens in legal limbo and facing the possibility of court cases against them.
 

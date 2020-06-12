@@ -2,9 +2,9 @@
 
 "The goal of the project is to unlock the wealth of information that is offline and bring it online," said Susan Wojcicki, director of product management at Google.
 
+Online pages from scanned books will not have adverts but will have links to online store Amazon, Google said.
+
 Users will only have access to extracts and bibliographies of copyrighted works.
 
 The libraries of five of the world's most important academic institutions are to be digitised by Google.
-
-The New York library is allowing Google to include a small portion of books no longer covered by copyright.
 

@@ -1,6 +1,6 @@
-Whereas in the UK, most people hook up to broadband via Asymmetric Digital Subscriber Line (ADSL) technology which lets ordinary copper phone lines support high data speeds.
-
 According to the report by the FCC, broadband is becoming increasingly popular, with people using it for research and shopping, as well as downloading music and watching video.
+
+Whereas in the UK, most people hook up to broadband via Asymmetric Digital Subscriber Line (ADSL) technology which lets ordinary copper phone lines support high data speeds.
 
 The total number of people and businesses on broadband rose by to 32.5 million in the year ending June 2004, compared to 23.5 million in June 2003.
 

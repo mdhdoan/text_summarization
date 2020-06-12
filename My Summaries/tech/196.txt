@@ -1,10 +1,10 @@
 "It seems that people are switching from Microsoft's Internet Explorer to Mozilla's new Firefox browser," said Niels Brinkman, co-founder of Amsterdam-based OneStat.com.
 
-The proportion of surfers using Microsoft's Internet Explorer (IE) has dropped to below 90%, say web analysts.
+Supporters of the open-source software in the US managed to raise $250,000 (£133,000) to advertise the release of Firefox 1.0 in The New York Times, and support the Mozilla Foundation.
 
-"Microsoft continues to make significant investments in IE, including Service Pack 2 with advanced security technologies, and continues to encourage a vibrant ecosystem of third party add-ons for Internet Explorer."
-
-Other browser software, like Opera and Apple's Safari, are also challenging Microsoft's grip on the browser market.
+The figures echo similar research from net analyst WebSideStory which suggested that IE had 92.9% of users in October compared to 95.5% in June.
 
 That means people are free to adapt the software's core code to create other innovative features, like add-ons or extensions to the program.
+
+Other browser software, like Opera and Apple's Safari, are also challenging Microsoft's grip on the browser market.
 

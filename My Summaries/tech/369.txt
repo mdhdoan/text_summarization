@@ -1,10 +1,10 @@
-Microsoft is developing a new version of Internet Explorer browser and its operating system, Windows, which has been code-named Longhorn.
-
 Microsoft is planning to make Windows and Internet Explorer more secure by including software to give people more control over personal information.
 
-Although the flaw was fixed, Microsoft has come under regular criticism for the number of security loopholes in Internet Explorer.
+While Passport and Hailstorm stored user information centrally on the net, the latest system will store data on a user's PC.
 
 Michael Stephenson, director in Microsoft's Windows Server division, would not confirm however whether the new info cards ID system will be built into the current Windows XP version or Longhorn.
 
-Longhorn is due to be released commercially in late 2006, but an updated version of Internet Explorer is due for release later this year.
+Microsoft is developing a new version of Internet Explorer browser and its operating system, Windows, which has been code-named Longhorn.
+
+Microsoft's two previous programs, Passport and Hailstorm, aimed to protect users but were criticised.
 

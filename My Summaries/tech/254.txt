@@ -1,10 +1,10 @@
-Asymmetric Digital Subscriber Line technology lets ordinary copper phone lines support high data speeds.
-
 Part of the surge in people signing up was due to BT stretching the reach of ADSL - the UK's most widely used way of getting broadband - beyond six kilometres.
 
 According to BT, more than 95% of UK homes and businesses can receive broadband over the phone line.
 
 The last million connections were made over the past four months, with thousands of people being added to the total every day of the week.
+
+One person in the UK is joining the internet's fast lane every 10 seconds, according to BT.
 
 The telecoms giant said the number of people on broadband via the telephone line had now surpassed four million.
 

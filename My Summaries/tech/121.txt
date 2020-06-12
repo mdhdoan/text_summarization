@@ -1,10 +1,10 @@
-You can hear more on this story on the BBC World Service's Go Digital programme.
-
 By playing games, like pass-the-parcel, a University of Hertfordshire team is finding out how future robot companions should react in social situations.
-
-"Without such studies, you will build robots which might not respect the fact that humans are individuals, have preferences and come from different cultural backgrounds," Professor Dautenhahn told BBC News Online.
 
 However, according to researchers, it will still take many years to build a robot which would make full use of the "robotiquette" for human interaction.
 
-In most situations, a companion robot will eventually have to deal not only with one person, but also with groups of people.
+"Without such studies, you will build robots which might not respect the fact that humans are individuals, have preferences and come from different cultural backgrounds," Professor Dautenhahn told BBC News Online.
+
+Showing off its skills at the Science Museum, the unnamed robot had to select, approach, and ask different children to pick up a parcel with a gift, moving it arm as a pointer and its camera as an eye.
+
+The work is part of the European Cogniron robotics project, and was on show at London's Science Museum.
 

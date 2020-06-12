@@ -1,10 +1,10 @@
-"We had to rewrite almost all the tools," Me den Hartog told the BBC News website.
-
-The Dutch team used already available technologies, although it had to upgrade them to be able to handle the high-resolution image.
+"He did it all by hand, which was an enormous effort, and we got the idea that if you use automatic techniques, it would be feasible to build a larger image," said Jurgen den Hartog, one of the TNO researchers behind the project.
 
 The researchers have put the image on a website which lets viewers explore the wealth of detail that it captures.
 
-"He did it all by hand, which was an enormous effort, and we got the idea that if you use automatic techniques, it would be feasible to build a larger image," said Jurgen den Hartog, one of the TNO researchers behind the project.
+Following the success of this project, and with promises of help from others, the TNO team is considering creating a full 360-degree panoramic view of another Dutch city, with even higher resolution.
 
 The first image of such a size was manually constructed by US photographer Max Lyons in November 2003.
+
+"We had to rewrite almost all the tools," Me den Hartog told the BBC News website.
 

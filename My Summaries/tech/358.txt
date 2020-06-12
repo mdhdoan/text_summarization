@@ -1,10 +1,10 @@
-Bill Thompson is a regular commentator on the BBC World Service programme Go Digital.
-
-Similarly, users of TiVo digital video recorders have found that they cannot record some shows, and other programmes that they have recorded are automatically deleted after a day.
-
 Eventually the TPM will be built into the main processor itself, and if the trusted computing group has its way then you will find one in every piece of hardware you own, from mobile phones to TV set top boxes to children's toys.
 
 Users of Apple's iTunes used to be able to stream the music they had brought to up to five other iTunes users, a great way of letting your mates discover your music collection.
 
 Because the trusted computing base is also used to make digital rights management (DRM) systems more secure, this will give content providers a lot more control over what we can do with music, movies and books that we have bought from them.
+
+Similarly, users of TiVo digital video recorders have found that they cannot record some shows, and other programmes that they have recorded are automatically deleted after a day.
+
+But the latest version of iTunes limits this capability, just as an earlier upgrade reduced the number of times you could burn a selected playlist of purchased songs to a CD.
 

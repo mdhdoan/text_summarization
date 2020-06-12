@@ -1,10 +1,10 @@
 Also released this year was the Mosquito game for Symbian phones which surreptitiously sends messages to premium rate numbers, and in November the Skulls Trojan came to light which can cripple phones.
 
-On the positive side, Finnish security firm F-Secure said that 2004 was the best-ever year for the capture, arrest and sentencing of virus writers and criminally-minded hackers.
+Mr Hogan said worm writers were more interested in recruiting PCs to take part in "bot nets" that can be used to send out spam or to mount attacks on websites.
+
+By contrast, said Mr Hogan, the code for viruses such as Gaobot, Spybot and Randex were commonly held and many groups work on them to produce new variants at the same time.
+
+Also on the increase are the number of networks of remotely controlled computers, called bot nets, used by malicious hackers and conmen to carry out many different cyber crimes.
 
 In June, the Cabir virus was discovered that can hop from phone to phone using Bluetooth short-range radio technology.
-
-In the past, threats to smart phones have been largely theoretical because the viruses created to cripple phones existed only in the laboratory rather than the wild.
-
-The emergence of the first proper virus for mobile phones was also seen in 2004.
 

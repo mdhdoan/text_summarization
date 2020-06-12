@@ -4,7 +4,7 @@ But rather than being a questionnaire, the attachment contains a virus that infe
 
 It is not clear what the virus does once it has infected a computer.
 
-An attachment in the e-mail contains the virus, the FBI said.
+The message asks recipients to click on the attachment and answer some questions about their internet use.
 
-Security warning over 'FBI virus'
+The messages warn that their internet use has been monitored by the FBI's Internet Fraud Complaint Center.
 

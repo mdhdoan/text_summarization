@@ -1,10 +1,10 @@
 "Telcos have been wanting to do video for a long time," Ed Graczyk, director of marketing for Microsoft IPTV, told the BBC News website.
 
-Jeremy Allaire, chief of Brightcove, told the BBC News website that it would be a flavour of IPTV that was about harnessing the web as a "channel".
-
 "The things software can do to integrate media into devices means a whole new generation of connected entertainment experiences that cross devices from the TV, to the mobile, to the gaming console and so on."
 
-The company intends its Microsoft's IPTV Edition software, an end-to-end management and delivery platform, to let telcos to do exactly that, seamlessly.
+Software giant Microsoft thinks IPTV - Internet Protocol TV - is the future of television, and it sits neatly with its vision of the "connected entertainment experience".
 
-Microsoft is one of the companies that started thinking about IPTV some time ago.
+It potentially lets operators target programmes to smaller, niche or localised audiences, sending films to Bollywood fans for instance, as well as individual devices.
+
+The company intends its Microsoft's IPTV Edition software, an end-to-end management and delivery platform, to let telcos to do exactly that, seamlessly.
 

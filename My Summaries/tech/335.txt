@@ -1,10 +1,10 @@
-The system is not available commercially yet, but Motorola, the US mobile handset and infrastructure maker, held a clinic for mobile operators on HSDPA (High Speed Downlink Packet Access), a high-speed, high bandwidth technology available now.
-
-Nokia and Canada-based wireless communication products company Sierra Wireless recently agreed to work together on High Speed Downlink Packet Access.
-
-We are "expanding our network and deploying EV-DO technology to meet customer demand for faster wireless speeds," said Oliver Valente, Sprint's vice president for technology development, when the contract was announced.
-
 Siemens' plans for a one gigabit network may be more than a user needs today, but Christoph Caselitz, president of the mobile networks division at the firm says that: "By the time the next generation of mobile communication debuts in 2015, the need for transmission capacities for voice, data, image and multimedia is conservatively anticipated to rise by a factor of 10."
 
+The system is not available commercially yet, but Motorola, the US mobile handset and infrastructure maker, held a clinic for mobile operators on HSDPA (High Speed Downlink Packet Access), a high-speed, high bandwidth technology available now.
+
 MMO2, the UK-based operator with services in the UK, Ireland and Germany, has opted for technology based on HSDPA.
+
+Motorola has conducted five trials of its technology and says speeds of 2.9Mbps have been recorded at the edge of an outdoor 3G cell using a single HSDPA device.
+
+As part of $3bn in multi-year contracts announced late last year, Sprint will spend around $1bn on EV-DO technology from Lucent Technologies, Nortel Networks and Motorola that provides average data speeds of 0.3-0.5 megabits a second, and peak download rates of 2.4Mbps.
 

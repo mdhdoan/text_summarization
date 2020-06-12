@@ -1,10 +1,10 @@
-In a joint statement the three firms gave hints about how the chip will work but fuller details will be released in February next year at the International Solid State Circuits Conference in San Francisco.
-
 The PlayStation 3 is expected in 2006 but developers are expecting to get prototypes early next year to tune games that will appear on it at launch.
 
-The chip has also been refined to be able to handle the detailed graphics common in games and the data demands of films and broadband media.
+In a joint statement the three firms gave hints about how the chip will work but fuller details will be released in February next year at the International Solid State Circuits Conference in San Francisco.
 
 Sony, IBM and Toshiba have released limited data about the so-called Cell chip that will be able to carry out trillions of calculations per second.
+
+The chip has also been refined to be able to handle the detailed graphics common in games and the data demands of films and broadband media.
 
 The three firms claim that the Cell chip will be up to 10 times more powerful than existing processors.
 

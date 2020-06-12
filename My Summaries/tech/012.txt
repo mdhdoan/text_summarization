@@ -2,9 +2,9 @@ The cash injection will be used to help its customers use Linux on every type of
 
 Workplace is a suite of programs and tools that allow workers to get at core business applications no matter what device they use to connect to corporate networks.
 
+IBM said the money will fund a variety of technical, research and marketing initiatives to boost Linux use.
+
 IBM is spending $100m (£52m) over the next three years beefing up its commitment to Linux software.
 
-They reason that more open scrutiny of software produces better programs and fuels innovation.
-
-The money will be used to help this push towards greater collaboration and will add Linux-based elements to IBM's Workplace software.
+In 2004 IBM said it had seen double digit growth in the number of customers using Linux to help staff work together more closely.
 

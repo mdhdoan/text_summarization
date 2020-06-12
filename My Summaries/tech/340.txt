@@ -1,10 +1,10 @@
 Registering names that look like that of legitimate companies but lead users to fake sites designed to steal passwords and credit card details could become a whole lot easier for determined scammers, says Stephen Dyer, director of UKIF.
 
-"It is important to alert users that there is a new and invisible and almost undetectable way of diverting them to what looks like a perfectly genuine site," he added.
+"A rush to introduce IDN-disabled browsers into the marketplace is an overly-zealous step that will harm public confidence in IDNs - a technology that is desperately needed in the non-English speaking world," the organisation said in a statement.
+
+Domain names are the "real language" addresses of websites, rather than their internet protocol address, which is a series of numbers.
 
 The Internationalised Domain Names system has been a work in progress for years and has recently been approved by the Internet Engineering Task Force.
 
 The resulting domain as displayed to the users would look identical to the real site as a Russian 'a' look just like an English 'a'.
-
-But the computer code would be different, and the site it would lead users to could be a fake.
 

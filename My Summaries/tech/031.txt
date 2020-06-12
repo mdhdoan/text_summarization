@@ -1,10 +1,10 @@
-Steve Ash, from Activcard, told the BBC News website there are two parts to the process of identification.
-
-"I don't think the threat is overplayed," Barry Beal, global security manager for Capgemini, told the BBC News website.
+The code is validated by the bank's systems, matching the information they expect with the customer's unique key.
 
 More people are becoming aware of online security issues but they have little confidence that companies are doing enough to counter the threats, said security firm RSA, which carried out the poll.
 
-"The PDA or phone method is a possible alternative as people are always carrying phones around," he said.
+The method it has developed makes use of the chip embedded in bank cards and a special card reader which can generate unique codes that are active for a specified amount of time.
 
-The code is validated by the bank's systems, matching the information they expect with the customer's unique key.
+It means that in a typical security attack, explains Mr Ash, even if password information is captured by a scammer using keystroke software or just through spoof websites, they need the passcode.
+
+Steve Ash, from Activcard, told the BBC News website there are two parts to the process of identification.
 

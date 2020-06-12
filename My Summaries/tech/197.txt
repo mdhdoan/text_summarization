@@ -2,9 +2,9 @@ The file, nicknamed Skulls, is thought to have surfaced on shareware sites where
 
 The firm has produced guidance for users caught out to help them remove the program and get their phone working again.
 
+Once installed the program replaces all the icons on the main page with skulls and replaces all the working applications, such as contacts, calendar, notebook etc with non-working versions so the phone becomes almost useless.
+
 The program is masquerading as software that creates new background images and themes for the main screen of the 7610 phone.
 
-The program is only the latest in a series of viruses produced to attack mobile phones.
-
-Once installed the program replaces all the icons on the main page with skulls and replaces all the working applications, such as contacts, calendar, notebook etc with non-working versions so the phone becomes almost useless.
+A statement by Symbian played down the significance of the malicious program and said few people would fall victim to it as users have to go through several steps to install it, one of which includes ignoring a security warning.
 

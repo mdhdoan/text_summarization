@@ -1,10 +1,10 @@
 Microsoft is investigating a trojan program that attempts to switch off the firm's anti-spyware software.
 
-Microsoft said it did not believe the program was widespread and recommended users to use an anti-virus program.
-
 Earlier this week, Microsoft said it would buy anti-virus software maker Sybari Software to improve its security in its Windows and e-mail software.
+
+The anti-spyware program being targeted is currently only in beta form and aims to help users find and remove spyware - programs which monitor internet use, causes advert pop-ups and slow a PC's performance.
 
 Microsoft said in a statement it is investigating what it called a criminal attack on its software.
 
-The program attempts to disable or delete Microsoft's anti-spyware tool and suppress warning messages given to users.
+Microsoft said it did not believe the program was widespread and recommended users to use an anti-virus program.
 

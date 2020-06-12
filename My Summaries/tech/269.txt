@@ -1,10 +1,10 @@
 The firm is following in the footsteps of Microsoft, Google and Ask Jeeves, which have offered similar services.
 
-Alexander Linden, vice president of emerging technologies at analyst firm Gartner,downloaded the Google product but has since removed it.
-
 Internet giant Yahoo has launched software to allow people to search e-mail and other files on their PCs.
 
 "It is all about extending the idea of search and getting a closer relationship with consumers by organising not just how they search on the internet but the files on your computer as well," he said.
 
-It is designed to work alongside Microsoft's Outlook and Outlook Express e-mail programs.
+Alexander Linden, vice president of emerging technologies at analyst firm Gartner,downloaded the Google product but has since removed it.
+
+It doesn't yet incorporate web searching, although Yahoo has promised that future versions will allow users to search both web-based and desktop data.
 

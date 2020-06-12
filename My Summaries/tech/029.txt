@@ -1,10 +1,10 @@
-The war of words between Microsoft and the open source movement heated up this week as Linux founder Linus Torvalds led an attack on software patents.
-
 "The industry respects the open source movement and in fact many of the members we represent use the open source system to develop software," "We think the important point to make is that companies should be able to choose between patents, copyrights and open source as to the treatment of their intellectual discoveries, and not be forced into using one or the other," she added.
+
+The war of words between Microsoft and the open source movement heated up this week as Linux founder Linus Torvalds led an attack on software patents.
 
 The attack on software patents comes at a time when IBM has made 500 of its patents freely available.
 
-Linux is a freely-available alternative to Microsoft's Windows.
+"If totally pushed to the wall - because their business model no longer holds up in an era in which open source is an economically superior way to produce software...of course they're going to unleash the WMDs," Mr Kapor is reported as saying.
 
-Mitchell Kapor, chairman of the Mozilla foundation, warned that Microsoft could use patent lawsuits in the future.
+"As far as Intellect is concerned, open source and patents have co-existed for many years without problems," said spokeswoman Jill Sutherland.
 

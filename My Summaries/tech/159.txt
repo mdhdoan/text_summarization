@@ -4,7 +4,7 @@ Earlier this week the company released a screensaver that bombarded the sites wi
 
 Monitoring firm Netcraft analysed response times for some of the sites targeted by the screensaver and found that a number were completely knocked offline.
 
-In such attacks thousands of computers bombard sites with data in an attempt to overwhelm them.
+Lycos said the idea was to get the spam sites running at 95% capacity and generate big bandwidth bills for the spammers behind the sites.
 
-Lycos Europe's "Make love not spam" campaign was intended as a way for users to fight back against the mountain of junk mail flooding inboxes.
+In such attacks thousands of computers bombard sites with data in an attempt to overwhelm them.
 

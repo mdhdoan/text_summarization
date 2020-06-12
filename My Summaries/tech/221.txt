@@ -1,10 +1,10 @@
 "In the competitive broadband environment, operators need to differentiate the way they offer access to services like live-play gaming," she said.
 
-"ISPs need to enhance the broadband experience for these high-end users by prioritising or reserving bandwidth for games," he added.
-
 In countries such as Korea, which has high levels of fast net connections to homes, online gaming is hugely popular.
 
-One of the main factors that spoils online gaming is "lag" in which there is a noticeable delay between a gamer clicking on a mouse or keyboard and what happens in the online gaming world.
+But the surge in numbers and huge demands for bandwidth should be a wake-up call to the industry which must ensure that their networks can cope with the increases in traffic, said Sandvine's chief technology officer Marc Morin.
 
-The growing popularity of online gaming could spell problems for net service firms, warns network monitoring company Sandvine.
+"ISPs need to enhance the broadband experience for these high-end users by prioritising or reserving bandwidth for games," he added.
+
+One of the main factors that spoils online gaming is "lag" in which there is a noticeable delay between a gamer clicking on a mouse or keyboard and what happens in the online gaming world.
 

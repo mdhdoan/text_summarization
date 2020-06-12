@@ -1,10 +1,10 @@
-The Sun Grid relies on Solaris, the operating system owned by Sun.
-
 Sun Grid costs users $1 (53p) for an hour's worth of processing and storage power on systems maintained by Sun.
 
 Sun Microsystems has launched a pay-as-you-go service which will allow customers requiring huge computing power to rent it by the hour.
 
-Mr Schwartz ran a demonstration of the service, showing how data could be processed in a protein folding experiment.
-
 So-called grid computing is the latest buzz phrase in a company which believes that computing capacity is as important a commodity as hardware and software.
+
+The company will have to persuade data centre managers to adopt a new model but it said it already had interest from customers in the oil, gas and financial services industries.
+
+Mr Schwartz ran a demonstration of the service, showing how data could be processed in a protein folding experiment.
 

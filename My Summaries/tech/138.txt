@@ -2,9 +2,9 @@ Few people get excited when some new software is released, especially when the p
 
 The release of Firefox 1.0 on 9 November might even cause a few heads to turn at Microsoft because the program is steadily winning people away from the software giant's Internet Explorer browser.
 
+Rivals to IE got a boost in late June when two US computer security organisations warned people to avoid the Microsoft program to avoid falling victim to a serious vulnerability.
+
 Since then the software has been gaining praise and converts, not least because of the large number of security problems that have come to light in Microsoft's Internet Explorer.
 
 Firefox is proving popular because, at the moment, it has far fewer security holes than Internet Explorer and has some innovations lacking in Microsoft's program.
-
-Rivals to IE got a boost in late June when two US computer security organisations warned people to avoid the Microsoft program to avoid falling victim to a serious vulnerability.
 

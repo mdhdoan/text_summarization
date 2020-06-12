@@ -1,10 +1,10 @@
-There are also persistent rumours that search engine Google is poised to produce its own brand browser based on Firefox.
+One of the first fruits of these acquisitions appeared last month with the release of a Microsoft anti-spyware program.
 
 The announcement about Internet Explorer was made by Bill Gates, Microsoft chairman and chief software architect, during a keynote speech at the RSA Security conference currently being held in San Francisco.
 
-Microsoft is working on a new version of its Internet Explorer web browser.
+In particular the Firefox browser has been winning fans and users since its first full version was released in November 2004.
 
-The decision to make Internet Explorer 7 is widely seen as a U-turn because, before now, Microsoft said it had no need to update the browser.
+In a bid to shore up the poor security in IE 6, Microsoft has regularly issued updates to patch loopholes exploited by criminals and the makers of nuisance programs such as spyware.
 
-Typically new versions of its browser appear with successive versions of the Windows operating system.
+Microsoft said the new version will be far less vulnerable to the bugs that make its current browser a favourite of tech-savvy criminals.
 

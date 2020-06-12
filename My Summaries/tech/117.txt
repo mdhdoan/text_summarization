@@ -1,10 +1,10 @@
-BBC News Online has received five warnings about the virus from security companies.
+Anti-virus firms are issuing high-level warnings about the new version of the Bagle e-mail program that seems to be catching a lot of people out.
 
 Anti-virus firms urged users to be wary of unexpected e-mail messages bearing attachments and to update their software to ensure they are protected against the latest threats.
-
-Anti-virus firms are issuing high-level warnings about the new version of the Bagle e-mail program that seems to be catching a lot of people out.
 
 Security firm Network Box said that it stopped more than 30,000 copies an hour of the virus as the outbreak reached a peak.
 
 The Windows virus grabs e-mail addresses from Microsoft Outlook and uses its own mail sending software to spread itself to new victims.
+
+"We've had several reports all over the world," said Mikko Hypponen, director of anti-virus research for F-Secure.
 

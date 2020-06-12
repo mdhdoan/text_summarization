@@ -2,9 +2,9 @@ IBM has donated the hardware, software, technical services and expertise to buil
 
 Anyone can volunteer to donate the spare time of their computers by downloading a special screensaver from the WGC website.
 
-The subjects of study are being selected by an international advisory board of experts specializing in health sciences, and technology.
-
-Your computer can now help solve the world's most difficult health and social problems.
-
 The body will evaluate proposals from leading research, public and not-for-profit organizations, and is expected to oversee up to six projects a year.
+
+"The World Community Grid will enable researchers around the globe to gather and analyze unprecedented quantities of data to help address important global issues," said Elain Gallin, program director for medical research at the Doris Duke Charitable Foundation.
+
+One of the most successful collaboration projects was Seti@home, run by the Search for Extra Terrestrial Life project, which sorted through radio signals looking for signs of alien communication.
 

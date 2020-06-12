@@ -2,9 +2,9 @@ Intel has unveiled research that could mean data is soon being moved around chip
 
 But the Intel researchers have found a way to suck away these errant electrons and turn silicon into a material that can both generate and amplify laser light.
 
-The result could be the close integration of the fibre optic cables that carry data as light with the computer chips that process it.
+The Intel researchers said products exploiting the breakthrough should appear by the end of the decade.
 
 Dr Paniccia said the work was the one of several steps needed if silicon was to be used to make components that could carry and process light in the form of data pulses.
 
-The Intel researchers said products exploiting the breakthrough should appear by the end of the decade.
+While work has been done to make some of the components that can move light around, before now silicon has not successfully been used to generate or amplify the laser light pulses used to send data over long distances.
 

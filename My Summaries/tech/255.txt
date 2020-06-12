@@ -1,8 +1,8 @@
 Last week Finnish police raided a BitTorrent site based in the country that, according to reports, let 10,000 users shared pirated films, software, music and games.
 
-The site was the most popular place for people swapping and sharing links for the BitTorrent network.
-
 Because of the way that BitTorrent works, server sites do not host the actual file being shared, instead they host a link that points people to others that have it.
+
+The site was the most popular place for people swapping and sharing links for the BitTorrent network.
 
 The site is thought to have closed following an announcement by the Motion Picture Association of America that it was launching legal action against those operating BitTorrent servers rather than end users.
 

@@ -2,9 +2,9 @@ In early October a so-called "denial of service" attack was mounted on the site 
 
 There are now at least three working alternative domains for the Bush-Cheney campaign that let web users outside the US visit the site.
 
-He said the site may see no reason to distribute content to people who will not be voting next week.
-
 Data gathered by Netcraft on the pattern of traffic to the site shows that the blocking is not the result of another denial of service attack.
 
-The blocking began early on Monday so those outside the US and trying to view the site got a message saying they are not authorised to view it.
+About the same time the web team of the Bush-Cheney campaign started using the services of a company called Akamai that helps websites deal with the ebbs and flows of visitor traffic.
+
+He said the site may see no reason to distribute content to people who will not be voting next week.
 
