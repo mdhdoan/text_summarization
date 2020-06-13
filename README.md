@@ -21,7 +21,7 @@ Another factor to consider is the length of the summaries. A summary should not 
 # Analyzing application:
 
 # Drawbacks:
-In the process above, there are a few drawbacks. First of all: The summaries provided by the dataset [Summaries](https://github.com/mdhdoan/text_summarization/tree/master/BBC%20News%20Summary/Summaries) did not published their way of attaining the solution. This led to a situation where it is experimental work to replicate their summaries. Therefore, there are no way of comparing the summaries, without being subjective about them. 
+In the process above, there are a few drawbacks. First of all, the summaries provided by the dataset [Summaries](https://github.com/mdhdoan/text_summarization/tree/master/BBC%20News%20Summary/Summaries) did not published their way of attaining the solution. This led to a situation where it is experimental work to replicate their summaries. Therefore, there are no way of comparing the summaries, without being subjective about them. 
 Another drawback is the usage of TFIDF for each term. In the cases of multiple NP, how does one properly boost each one to show their importance? The longer the NP is, usually the more important they are, but what if there is another way?
 # Conclusion:
 In the end, these are the summaries achieved via performing TFIDF.
