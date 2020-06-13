@@ -20,14 +20,14 @@ In order to achieve this, a method called "chunking" can be deployed. It will fi
 Another factor to consider is the length of the summaries. A summary should not take too long to read, since readers either skim them and the headlines to rudimentarily guess what the article is about and whether it intrigues them or not. Therefore, the length of the summaries will be limited to about 5 sentences. This will allow the readers to read through them quickly, but not too long, that they would ignore them. 
 # Analyzing application:
 Firstly, the article is "chunked" into NP that is set. In this case, NP are Nouns who are preceeded only by adjective, verbs, or other nouns. "Big market" would be acceptable, but not "The market", since "The" is not an adjective/verb/noun.  
-![NP](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png). 
+![NP](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png) 
 For longer NP, they can be separated by "\*\*"  
-![Longer NP](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.49%20AM.png).  
+![Longer NP](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.49%20AM.png)  
 After being chunked and calculated their own TFIDF, then each documents are then re-examined to pair up the sentences with their NPs. 
-![pairing](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.17%20AM.png). 
+![pairing](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.17%20AM.png) 
 Lastly, the summaries are made of 5 sentences, so the job is to rank the sentences in each documents to produce the top 5 sentences with respect to their sentences's TFIDF.  
-![Result rank](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.30%20AM.png). 
-All results are then put into ["My Summaries"](https://github.com/mdhdoan/text_summarization/tree/master/My%20Summaries). 
+![Result rank](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.30%20AM.png) 
+All results are then put into ["My Summaries"](https://github.com/mdhdoan/text_summarization/tree/master/My%20Summaries) 
 
 # Drawbacks:
 In the process above, there are a few drawbacks. First of all, the summaries provided by the dataset [Summaries](https://github.com/mdhdoan/text_summarization/tree/master/BBC%20News%20Summary/Summaries) did not published their way of attaining the solution. This led to a situation where it is experimental work to replicate their summaries. Therefore, there are no way of comparing the summaries, without being subjective about them. 
