@@ -17,7 +17,10 @@ The presented problem now brings in a question:
 And after creating a summary, how can one evaluate if the summary is correct or not?  
 In this problem, the dataset of BBC news articles will be used. Along with it, there are a summary given for each article. The summaries can be used as a goal to reach, or to surpass in terms of summarizing the news articles. Those will be used to compare to the generated summaries.  
 # Solution:
-In this problem, an **extractive automatic summarization** will be deployed. The method would simply be ranking each sentences in a news article by their weight of each phrase. The method can be presented in the following steps:  
+In this problem, an **extractive automatic summarization** will be deployed. The method would simply be ranking each sentences in a news article by their weight of each phrase. 
+### Extractive automatic summarization:
+A summarization that produce a result of phrases/sentences presented in the article. This approach contains an advantage of not needed to understand the topic of the articles, while also have a disadvantage in the dependency of the article's words.  
+The method can be presented in the following steps:  
 ## Step 1: Looking for Noun Phrase - NP - in each sentences.  
 To start with, there is a need to filter all the stop words, since they are not vital to the calculation, and will only serve to skew the data. After that, there will also be a need to lemmatize and stemming all the words, so each word is reverted back to its root form. In addition to that, a method called "chunking" will be deployed. It will find the words that is going to be used, and collect them into a set of words. These can be refered to as **"Noun Phrase" - NP**. These NP can be organized into sets, which will allow the search to find duplicates throughout all the documents.  
 ## Step 2: Calculating TFIDF of NP: 
