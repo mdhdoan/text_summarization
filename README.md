@@ -17,7 +17,7 @@ The presented problem now brings in a question:
 And after creating a summary, how can one evaluate if the summary is correct or not?  
 In this problem, the dataset of BBC news articles will be used. Along with it, there are a summary given for each article. The summaries can be used as a goal to reach, or to surpass in terms of summarizing the news articles. Those will be used to compare to the generated summaries.  
 # 4. Solution:
-In this problem, an **extractive automatic summarization** will be deployed. The method would simply be ranking each sentences in a news article by their weight of each phrase. 
+In this problem, an **extraction-based automatic summarization** will be deployed. The method would simply be ranking each sentences in a news article by their weight of each phrase. 
 ### 4.0.1 Extractive automatic summarization:
 A summarization that produce a result of phrases/sentences presented in the article. This approach contains an advantage of not needed to understand the topic of the articles, while also have a disadvantage in the dependency of the article's words.  
 The method can be presented in the following steps:  
