@@ -1,31 +1,31 @@
 # text_summarization
 Extractive summary of BBC articles | News Articles is included
 
-# Abstracts:
+# 1. Abstracts:
 Given the fact that there are too many written articles being produced daily, how can one summarize them automatically for their own purposes? This paper focuses on performing automatic summarization on news articles. The main method deployed in this publish will be a crude automatic extractive summarization, based on [Term Frequency over Inverse Document Frequency](https://en.wikipedia.org/wiki/Tf–idf) of each phrases. 
 
 # Keywords:
 text summarization, extractive summarization, TFIDF
 
-# Introduction:
+# 2. Introduction:
 According to the Worldometer, an online tool that counts how many posts are made in **WordPress.com**, there are easily millions of posts made everyday. This creates a problem that no one has time to read through all of them. One of the clear example of this problem is the news. They can make as many articles as they want, but if there are too much, no one can read through all of them. That's why news companies started to create a small summary with their headlines. The summary, while a little bit bias to hook the readers, also serves the purpose of summarizing the idea of the article to save time for the reader.  
 The dataset used in this problem will be from [BBC News](https://github.com/mdhdoan/text_summarization/tree/master/BBC%20News%20Summary)
 
-# Problem:
+# 3. Problem:
 The presented problem now brings in a question:  
 **How can one summarize an article automatically?**  
 And after creating a summary, how can one evaluate if the summary is correct or not?  
 In this problem, the dataset of BBC news articles will be used. Along with it, there are a summary given for each article. The summaries can be used as a goal to reach, or to surpass in terms of summarizing the news articles. Those will be used to compare to the generated summaries.  
-# Solution:
+# 4. Solution:
 In this problem, an **extractive automatic summarization** will be deployed. The method would simply be ranking each sentences in a news article by their weight of each phrase. 
-### Extractive automatic summarization:
+### 4.0.1 Extractive automatic summarization:
 A summarization that produce a result of phrases/sentences presented in the article. This approach contains an advantage of not needed to understand the topic of the articles, while also have a disadvantage in the dependency of the article's words.  
 The method can be presented in the following steps:  
-## Step 1: Looking for Noun Phrase - NP - in each sentences.  
+## 4.1 Step 1: Looking for Noun Phrase - NP - in each sentences.  
 To start with, there is a need to filter all the stop words, since they are not vital to the calculation, and will only serve to skew the data. After that, there will also be a need to lemmatize and stemming all the words, so each word is reverted back to its root form. In addition to that, a method called "chunking" will be deployed. It will find the words that is going to be used, and collect them into a set of words. These can be refered to as **"Noun Phrase" - NP**. These NP can be organized into sets, which will allow the search to find duplicates throughout all the documents.  
-## Step 2: Calculating TFIDF of NP: 
+## 4.2 Step 2: Calculating TFIDF of NP: 
 After categorizing the noun phrases, one can trace over the articles to see how many times a phrase is repeated. This will aid in the calculation of term frequency. The most important step, is to calculate the [Term Frequency over Inverse Document Frequency](https://en.wikipedia.org/wiki/Tf–idf) (**TFIDF**). This will give each word a seperate weight, and consequently, each sentence will also have their own.  
-## Step 3: Create summaries:
+## 4.3 Step 3: Create summaries:
 The sentences can then be ranked, and the summary can have a limit to how many sentences/how important each sentences need to create a comprehensible summary.  
  Last but not least, the NP's length - the length of the whole Noun Phrase - must also be taken into consideration. Based on the assumption of treating the NP as a set of words, the maximum amount of subset from a set is 2^n, where n is the length of the set. Therefore, each NP will be boosted to with their respective boost.
 Another factor to consider is the length of the summaries. A summary should not take too long to read, since readers either skim them and the headlines to rudimentarily guess what the article is about and whether it intrigues them or not. Therefore, the length of the summaries will be limited to about 5 sentences. This will allow the readers to read through them quickly, but not too long, that they would ignore them. 
