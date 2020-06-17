@@ -2,7 +2,7 @@
 Extractive summary of BBC articles | News Articles is included
 
 # Abstracts:
-Given the fact that there are too many news articles, how can one summarize them automatically? With this, the paper now focuses on performing TFIDF on each noun phrases of each article to then rank the sentences that has them and combined them into summaries.
+Given the fact that there are too many written articles being produced daily, how can one summarize them automatically for their own purposes? This paper focuses on performing automatic summarization on news articles. The main method deployed in this publish will be a crude automatic extractive summarization, based on [Term Frequency over Inverse Document Frequency](https://en.wikipedia.org/wiki/Tf–idf) of each phrases. 
 
 # Introduction:
 According to the Worldometer, an online tool that counts how many posts are made in **WordPress.com**, there are easily millions of posts made everyday. This creates a problem that no one has time to read through all of them. One of the clear example of this problem is the news. They can make as many articles as they want, but if there are too much, no one can read through all of them. That's why news companies started to create a small summary with their headlines. The summary, while a little bit bias to hook the readers, also serves the purpose of summarizing the idea of the article to save time for the reader.  
