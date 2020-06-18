@@ -82,8 +82,7 @@ Lastly, the summaries are made of 5 sentences, as agreed upon above, so the job 
 ![ranked](https://github.com/mdhdoan/text_summarization/blob/master/Extra/ranking.png)  
 While in the program, each sentence will have the following format, where each sentence has 2 numerical values, where the second number is the important value: sentence's weight.
 ![Result rank](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.30%20AM.png) 
-The result can be a little bit difficult to imagine on a higher scale, so below are 2 summaries, one provided by BBC and the other is self produced.
-Original text: ![Article](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%207.04.30%20PM.png)
+The result can be a little bit difficult to imagine on a higher scale, so below are 2 summaries, one provided by BBC and the other is self produced.  
 Given summary | Produced summary:  
 ![G|P](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%207.29.56%20PM.png)  
 While the given summary is longer, most (and the entirety in some cases) of the produced summaries are included in the given summary. Since summaries are supposed to be short and carry the important ideas only, it is safe to say that the produced result is acceptable.    
