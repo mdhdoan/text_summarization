@@ -45,8 +45,10 @@ During the calculation, it is easier to refer to each noun phrases as a key, and
 ## 4.3. Step 3: Create summaries:
 The sentences can then be ranked, and the summary can have a limit to how many sentences/how important each sentence needs to create a comprehensible summary.
 However, there can be many ways to improve the ranking of the sentences:
-* Noun Phrase's length - the length of the whole Noun Phrase - must also be taken into consideration. Based on the assumption of treating the Noun Phrase as a set of words, the maximum amount of subset from a set is 2^n, where n is the length of the set. Therefore, each Noun Phrase will be boosted with their respective boost.
+* Noun Phrase's length - the length of the whole Noun Phrase - must also be taken into consideration. Based on the assumption of treating the Noun Phrase as a set of words, the maximum amount of subset from a set is 2^n, where n is the length of the set. Therefore, each Noun Phrase will be boosted with their respective boost  
+![Boosting]()
 * Summaries' length - A summary should not take too long to read since readers either skim them and the headlines to rudimentarily guess what the article is about and whether it intrigues them or not. Therefore, the length of the summaries will be limited to about 5 sentences. This will allow the readers to read through them quickly, but not too long, that they would ignore them. 
+![Summaries]()
 
 
 # 5. Analyzing application:
