@@ -69,11 +69,22 @@ For longer Noun Phrase, they can be separated by "\*\*"
 ## 5.2. Sentence Pairing with Noun Phrase: 
 After being chunked and calculated their TFIDF, then each document is then re-examined to pair up the sentences with their Noun Phrases. The Noun Phrase can be used to further lemmatized, which would enable similar phrases, such as "good people", and "nice people" to both be understood as talking about people.
 The phrases, when being revisited to count their frequencies in a document, can then be pair with each sentence, hence creating a key-value pairing system. Each sentence can be the key, and the phrases can be the values, which will store their TFIDF for calculation.  
+The principle behind this is like the illustration below: 
+![illustration](https://github.com/mdhdoan/text_summarization/blob/master/Extra/value.png)
+In the middle of the program, the TFIDF of each noun phrases will be included:
+![NP-pairing](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%207.06.18%20PM.png), or
 ![pairing](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.17%20AM.png)  
 
+
 ## 5.3. Result sentences ranked and written into files:
-Lastly, the summaries are made of 5 sentences, so the job is to rank the sentences in each document to produce the top 5 sentences concerning their sentences' TFIDF.    
+Lastly, the summaries are made of 5 sentences, so the job is to rank the sentences in each document to produce the top 5 sentences concerning their sentences' TFIDF.  
+While in the program, each sentence will have the following format, where each sentence has 2 numerical values, where the second number is the important value: sentence's weight.
 ![Result rank](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.30%20AM.png) 
+The result can be a little bit difficult to imagine on a higher scale, so below are 2 summaries, one provided by BBC and the other is self produced.
+Original text: ![Article](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%207.04.30%20PM.png)
+Given summary | Produced summary:  
+![G|P](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%207.29.56%20PM.png)  
+While the given summary is longer, most (and the entirety in some cases) of the produced summaries are included in the given summary.  
 All results are then put into [My Summaries](https://github.com/mdhdoan/text_summarization/tree/master/My%20Summaries) 
 
 
