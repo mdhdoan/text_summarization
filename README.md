@@ -45,6 +45,7 @@ In this case, NP are Nouns who are preceeded only by adjective, verbs, or other 
 In this case, the rule set is the following: 
 * A noun phrase must contain all the verbs/adjectives right before, while also grabbing as much nouns clumped together as possible
 * Also Pronouns are considered as a noun phrase too  
+
 ![NP-grammar](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.02.00%20PM.png)
 Using the grammar rule above, when run the program, the noun phrases can be viewed with the following design:  
 ![NP](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png)  
