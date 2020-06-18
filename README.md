@@ -26,6 +26,7 @@ In this problem, an **extraction-based automatic summarization** will be deploye
 
 ## 4.1 Step 1: Looking for Noun Phrase - NP - in each sentences.  
 To start with, there is a need to filter all the stop words, since they are not vital to the calculation, and will only serve to skew the data. After that, there will also be a need to lemmatize and stemming all the words, so each word is reverted back to its root form. In addition to that, a method called "chunking" will be deployed. It will find the words that is going to be used, and collect them into a set of words. These can be refered to as **"Noun Phrase" - NP**. These NP can be organized into sets, which will allow the search to find duplicates throughout all the documents.  
+
 ## 4.2 Step 2: Calculating TFIDF of NP: 
 After categorizing the noun phrases, one can trace over the articles to see how many times a phrase is repeated. This will aid in the calculation of term frequency. The most important step, is to calculate the [Term Frequency over Inverse Document Frequency](https://en.wikipedia.org/wiki/Tf–idf) (**TFIDF**). This will give each word a seperate weight, and consequently, each sentence will also have their own.  
 ## 4.3 Step 3: Create summaries:
@@ -35,16 +36,26 @@ However, there can be many ways to improve the ranking of the sentences:
 * Summaries's length. A summary should not take too long to read, since readers either skim them and the headlines to rudimentarily guess what the article is about and whether it intrigues them or not. Therefore, the length of the summaries will be limited to about 5 sentences. This will allow the readers to read through them quickly, but not too long, that they would ignore them. 
 # 5. Analyzing application:
 ## 5.1 NP analyze:
-Firstly, the article is "chunked" into NP that is set. In this case, NP are Nouns who are preceeded only by adjective, verbs, or other nouns. "Big market" would be acceptable, but not "The market", since "The" is not an adjective/verb/noun.  
+Firstly, the article is "chunked" into NP that is set.  
+This can be done by tokenizing each sentences and each words in a sentence, as shown below  
+![tokenize](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.01.02%20PM.png)  
+While creating the chunk, the details of the sentence and the chunk must also be preserved, like below  
+![preserve](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.01.20%20PM.png)
+In this case, NP are Nouns who are preceeded only by adjective, verbs, or other nouns. "Big market" would be acceptable, but not "The market", since "The" is not an adjective/verb/noun.  
+In this case, the rule set is the following: 
+* A noun phrase must contain all the verbs/adjectives right before, while also grabbing as much nouns clumped together as possible
+* Also Pronouns are considered as a noun phrase too  
+![NP-grammar](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.02.00%20PM.png)
+Using the grammar rule above, when run the program, the noun phrases can be viewed with the following design:  
 ![NP](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png)  
 In this case, since only one document is being process for the sake of the example, the tfidf is the one mentioned above, whereas the tf is the term frequency, and the idf is the inverse document frequency. The detail included are stating which document they belong (each category has their own set of NP, so no worries about duplications of documents id for now), then how many times the term appeared in the document, followed by how many times the NP appears in a sentence, and which sentence it is.  
-
 For longer NP, they can be separated by "\*\*"  
 ![Longer NP](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.49%20AM.png)  
 ## 5.2 Sentence Pairing with NP:
-After being chunked and calculated their own TFIDF, then each documents are then re-examined to pair up the sentences with their NPs.  
+After being chunked and calculated their own TFIDF, then each documents are then re-examined to pair up the sentences with their NPs. The NP can be used to further lemmatized, which would enable similar phrases, such as "good people", and "nice people" to both be understood as talking about people. The phrase must be lemma before stemming, since stemming can produce the wrong word.  
+![lemma and stem](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.02.46%20PM.png)  
+The phrases, when being revisited to count their frequencies in a document, can then be pair with each sentences, hence creating a key-value pairing system. Each sentences can be the key, and the phrases can be the values, which will store their TFIDF for calculation.
 ![pairing](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.17%20AM.png)  
-At this stage, the number next to each NP is their respective TFIDF, before being boosted.  
 ## 5.3 Result sentences ranked and written into files:
 Lastly, the summaries are made of 5 sentences, so the job is to rank the sentences in each documents to produce the top 5 sentences with respect to their sentences's TFIDF.  
 ![Result rank](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.30%20AM.png) 
