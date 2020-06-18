@@ -66,7 +66,7 @@ In this case, since only one document is being processed for the sake of the exa
 For longer Noun Phrase, they can be separated by "\*\*"  
 ![Longer Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.49%20AM.png)  
 
-## 5.2. Sentence Pairing with Noun Phrase:
+## 5.2. Sentence Pairing with Noun Phrase: 
 After being chunked and calculated their TFIDF, then each document is then re-examined to pair up the sentences with their Noun Phrases. The Noun Phrase can be used to further lemmatized, which would enable similar phrases, such as "good people", and "nice people" to both be understood as talking about people.
 The phrases, when being revisited to count their frequencies in a document, can then be pair with each sentence, hence creating a key-value pairing system. Each sentence can be the key, and the phrases can be the values, which will store their TFIDF for calculation.  
 ![pairing](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.17%20AM.png)  
