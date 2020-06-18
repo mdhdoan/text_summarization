@@ -206,7 +206,6 @@ def category_summary(summary_type):
     # article_list = ['014.txt']
     for article in article_list[:]:
         document_path_list = (file_path + summary_type + article)
-        # summary_path_list = ('BBC News Summary/Summaries/tech/' + article)
         counter += 1
         # print("Article #" + str(counter) + ': ' + article)
         NP_chunk_build(document_path_list, article, doc_chunk_dict)
