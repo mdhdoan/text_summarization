@@ -1,11 +1,11 @@
 # text_summarization
-Extractive summary of BBC articles | News Articles is included
+Extraction-based summary of BBC articles | News Articles is included
 
 # Abstracts:
-Given the fact that there are too many written articles being produced daily, how can one summarize them automatically for their own purposes? This paper focuses on performing automatic summarization on news articles. The main method deployed in this publish will be a crude automatic extractive summarization, based on [Term Frequency over Inverse Document Frequency](https://en.wikipedia.org/wiki/Tf–idf) of each phrases. 
+Given the fact that there are too many written articles being produced daily, how can one summarize them automatically for their own purposes? This paper focuses on performing automatic summarization on news articles. The main method deployed in this publish will be a crude automatic extraction-based summarization, based on [Term Frequency over Inverse Document Frequency](https://en.wikipedia.org/wiki/Tf–idf) of each phrases. 
 
 ### Keywords:
-text summarization, extractive summarization, TFIDF
+text summarization, extraction-based summarization, TFIDF
 
 # 1. Introduction:
 According to the Worldometer, an online tool that counts how many posts are made in **WordPress.com**, there are easily millions of posts made everyday. This creates a problem that no one has time to read through all of them. One of the clear example of this problem is the news. They can make as many articles as they want, but if there are too much, no one can read through all of them. That's why news companies started to create a small summary with their headlines. The summary, while a little bit bias to hook the readers, also serves the purpose of summarizing the idea of the article to save time for the reader.  
@@ -17,7 +17,7 @@ The presented problem now brings in a question:
 And after creating a summary, how can one evaluate if the summary is correct or not?  
 In this problem, the dataset of BBC news articles will be used. Along with it, there are a summary given for each article. The summaries can be used as a goal to reach, or to surpass in terms of summarizing the news articles. Those will be used to compare to the generated summaries.  
 
-# 3. Extractive automatic summarization:
+# 3. Extraction-based summarization:
 A summarization that produce a result of phrases/sentences presented in the article. This approach contains an advantage of not needed to understand the topic of the articles, while also have a disadvantage in the dependency of the article's words.  
 The method can be presented in the following steps:  
 
