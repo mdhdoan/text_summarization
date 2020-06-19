@@ -50,8 +50,8 @@ In this case, the ruleset is the following:
 * Also Pronouns are considered as a noun phrase too  
 
 Therefore, the grammar rule for those chunks can be seen as:
-> Noun Phrase:  {<VB>?<JJ>*(<NN>|<NNS>)+}
->               {<NNP>+}
+> Noun Phrase:  {\<VB\>?<JJ>*(\<NN\>|\<NNS\>)+}
+>               {\<NNP\>+}
 
 Using the grammar rule above, when running the program, the noun phrases can be viewed with the following design:  
 ![Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png)  
