@@ -61,8 +61,10 @@ The phrases, when being revisited to count their frequencies in a document, can 
 The principle behind this is like the illustration below:  
 Original text:  
 > ![Original text](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Article.png)  
+
 Then being paired up with extracted noun phrases:  
 > ![paired](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Sentence%20pairing.png)
+
 In the middle of the program, the TFIDF of each noun phrases will be included:
 > ![NP-pairing](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.32.01%20PM.png)
 
@@ -70,10 +72,12 @@ In the middle of the program, the TFIDF of each noun phrases will be included:
 ## 5.3. Result sentences ranked and written into files:
 Lastly, the summaries are made of 5 sentences, as agreed upon above, so the job is to rank the sentences in each document to produce the top 5 sentences concerning their sentences' TFIDF.
 > ![ranked](https://github.com/mdhdoan/text_summarization/blob/master/Extra/ranking.png)  
+
 While in the program, each sentence will have the following format, where each sentence has 2 numerical values, where the second number is the important value: sentence's weight.
 The result can be a little bit difficult to imagine, so below are 2 summaries, one provided by BBC and the other is produced by the method in step 4.  
 Given summary | Produced summary:  
-> ![G|P](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.28.34%20PM.png)  
+> ![G|P](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.28.34%20PM.png) 
+
 While the given summary is longer, most - in green color above - (and the entirety in some cases) of the produced summaries are included in the given summary. Since summaries are supposed to be short and carry the important ideas only, it is safe to say that the produced result is acceptable.    
 All results are then put into [My Summaries](https://github.com/mdhdoan/text_summarization/tree/master/My%20Summaries), for future usage and collection.
 
