@@ -1,5 +1,4 @@
-# text_summarization
-Extraction-based summary of BBC articles | News Articles are included
+# Extraction-based summary of BBC articles | News Articles are included
 
 # Abstracts:
 Given the fact that there are too many written articles being produced daily, how can one summarize them automatically for their purposes? This paper focuses on performing automatic summarization on news articles. The main method deployed in this publish will be a crude automatic extraction-based summarization, based on [Term Frequency over Inverse Document Frequency](https://en.wikipedia.org/wiki/Tf–idf) - (**TFIDF**) of each phrase. 
@@ -27,28 +26,19 @@ A summarization that produces a result of phrases/sentences presented in the art
 # 4. Solution:
 In this problem, an **extraction-based automatic summarization** will be deployed. The method would simply be ranking each sentence in a news article by the weight of each phrase.
 
-## 4.1. Step 1: Looking for Noun Phrase - in each sentences.  
+## 4.1. Looking for Noun Phrase - in each sentences.  
 Too start with, there is a need to filter all the stop words, since they are not vital to the calculation, and will only serve to skew the data. After that, there will also be a need to lemmatize and stemming all the words, so each word is reverted to its root form. In addition to that, a method called "chunking" will be deployed. It will find the words that are going to be used and collect them into a set of words. These can be referred to as **"Noun Phrase"**. These Noun phrases can be organized into sets, which will allow the search to find duplicates throughout all the documents.
-This can be done by tokenizing each sentence and each word in a sentence, as shown below   
-![tokenize](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.01.02%20PM.png)  
-While creating the chunk, the details of the sentence and the chunk must also be preserved, like below    
-![preserve](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.01.20%20PM.png)
 Also, in the process of creating the list of phrases and its detail, the phrase must be lemma before stemming, since stemming can produce the wrong word.  
-![lemma and stem](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.02.46%20PM.png)  
 
-## 4.2. Step 2: Calculating TFIDF of Noun Phrase: 
+## 4.2. Calculating TFIDF of Noun Phrase: 
 After categorizing the noun phrases, one can trace over the articles to see how many times a phrase is repeated. This will aid in the calculation of term frequency. The most important step is to calculate the TFIDF. This will give each word a separate weight, and consequently, each sentence will also have their own.  
-![TFIDF calculation](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.04.06%20PM.png)
 During the calculation, it is easier to refer to each noun phrases as a key, and the values associated (when needed), so that each time accessing a key, all of its values can be extracted easily:  
-![Print NP](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%201.04.36%20PM.png)
 
-## 4.3. Step 3: Create summaries:
+## 4.3. Create summaries:
 The sentences can then be ranked, and the summary can have a limit to how many sentences/how important each sentence needs to create a comprehensible summary.
 However, there can be many ways to improve the ranking of the sentences:
 * Noun Phrase's length - the length of the whole Noun Phrase - must also be taken into consideration. Based on the assumption of treating the Noun Phrase as a set of words, the maximum amount of subset from a set is 2^n, where n is the length of the set. Therefore, each Noun Phrase will be boosted with their respective boost  
-![Boosting](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%204.51.50%20PM.png)
 * Summaries' length - A summary should not take too long to read since readers either skim them and the headlines to rudimentarily guess what the article is about and whether it intrigues them or not. Therefore, the length of the summaries will be limited to about 5 sentences. This will allow the readers to read through them quickly, but not too long, that they would ignore them. 
-![Summaries](https://github.com/mdhdoan/text_summarization/blob/master/Code%20pictures/Screen%20Shot%202020-06-18%20at%204.52.59%20PM.png)
 
 
 # 5. Analyzing application:
@@ -81,8 +71,7 @@ In the middle of the program, the TFIDF of each noun phrases will be included:
 Lastly, the summaries are made of 5 sentences, as agreed upon above, so the job is to rank the sentences in each document to produce the top 5 sentences concerning their sentences' TFIDF.
 ![ranked](https://github.com/mdhdoan/text_summarization/blob/master/Extra/ranking.png)  
 While in the program, each sentence will have the following format, where each sentence has 2 numerical values, where the second number is the important value: sentence's weight.
-![Result rank](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.35.30%20AM.png) 
-The result can be a little bit difficult to imagine on a higher scale, so below are 2 summaries, one provided by BBC and the other is self produced.  
+The result can be a little bit difficult to imagine, so below are 2 summaries, one provided by BBC and the other is produced by the method in step 4.  
 Given summary | Produced summary:  
 ![G|P](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%207.29.56%20PM.png)  
 While the given summary is longer, most - in green color above - (and the entirety in some cases) of the produced summaries are included in the given summary. Since summaries are supposed to be short and carry the important ideas only, it is safe to say that the produced result is acceptable.    
