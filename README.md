@@ -50,7 +50,7 @@ In this case, the ruleset is the following:
 * Also Pronouns are considered as a noun phrase too  
 
 Therefore, the grammar rule for those chunks can be seen as:
-> Noun Phrase:  {\<VB\>?<JJ>*(\<NN\>|\<NNS\>)+}
+> Noun Phrase:  {\<VB\>?\<JJ\>*(\<NN\>|\<NNS\>)+}
 >               {\<NNP\>+}
 
 Using the grammar rule above, when running the program, the noun phrases can be viewed with the following design:  
@@ -68,7 +68,7 @@ Original text:
 Then being paired up with extracted noun phrases:  
 ![paired](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Sentence%20pairing.png)
 In the middle of the program, the TFIDF of each noun phrases will be included:
-![NP-pairing](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%207.06.18%20PM.png)
+![NP-pairing](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%207.06.18%20PM.png =500x200)
 
 
 ## 5.3. Result sentences ranked and written into files:
