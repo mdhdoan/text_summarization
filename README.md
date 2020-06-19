@@ -49,10 +49,6 @@ In this case, the ruleset is the following:
 * A noun phrase must contain all the verbs/adjectives right before, while also grabbing as many nouns clumped together as possible
 * Also Pronouns are considered as a noun phrase too  
 
-Therefore, the grammar rule for those chunks can be seen as:
-> Noun Phrase:  {\<VB\>?\<JJ\>*(\<NN\>|\<NNS\>)+}
->               {\<NNP\>+}
-
 Using the grammar rule above, when running the program, the noun phrases can be viewed with the following design:  
 ![Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png)  
 In this case, since only one document is being processed for the sake of the example, the "tfidf" is the one mentioned above, whereas the "tf" is the term frequency, and the "idf" is the inverse document frequency. The detail included is stating which document they belong (each category has their own set of Noun Phrase, so no worries about duplications of documents id for now), then how many times the term appeared in the document, followed by how many times the Noun Phrase appears in a sentence, and which sentence it is.
