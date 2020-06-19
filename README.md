@@ -20,11 +20,11 @@ In this problem, the dataset of BBC news articles will be used. Along with it, t
 
 
 # 3. Extraction-based summarization:
-A summarization that produces a result of phrases/sentences presented in the article. This approach contains an advantage of not needed to understand the topic of the articles, while also have a disadvantage in the dependency of the article's words. 
+A summarization that produces a result of phrases/sentences presented in the article. This approach contains an advantage of not needed to understand the topic of the articles, while also have a disadvantage in the dependency of the article's words.  
 
 
 # 4. Solution:
-In this problem, an **extraction-based automatic summarization** will be deployed. The method would simply be ranking each sentence in a news article by the weight of each phrase.
+In this problem, an **extraction-based automatic summarization** will be deployed. The method would simply be ranking each sentence in a news article by the weight of each phrase.  
 
 ## 4.1. Looking for Noun Phrase - in each sentences.  
 Too start with, there is a need to filter all the stop words, since they are not vital to the calculation, and will only serve to skew the data. After that, there will also be a need to lemmatize and stemming all the words, so each word is reverted to its root form. In addition to that, a method called "chunking" will be deployed. It will find the words that are going to be used and collect them into a set of words. These can be referred to as **"Noun Phrase"**. These Noun phrases can be organized into sets, which will allow the search to find duplicates throughout all the documents.
