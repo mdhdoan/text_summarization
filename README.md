@@ -32,7 +32,7 @@ Also, in the process of creating the list of phrases and its detail, the phrase 
 
 ## 4.2. Calculating TFIDF of Noun Phrase: 
 After categorizing the noun phrases, one can trace over the articles to see how many times a phrase is repeated. This will aid in the calculation of term frequency. The most important step is to calculate the TFIDF. This will give each word a separate weight, and consequently, each sentence will also have their own.  
-During the calculation, it is easier to refer to each noun phrases as a key, and the values associated (when needed), so that each time accessing a key, all of its values can be extracted easily:  
+During the calculation, it is easier to refer to each noun phrases as a key, and the values associated (when needed), so that each time accessing a key, all of its values can be extracted easily.  
 
 ## 4.3. Create summaries:
 The sentences can then be ranked, and the summary can have a limit to how many sentences/how important each sentence needs to create a comprehensible summary.
