@@ -10,48 +10,48 @@ wnl = WordNetLemmatizer()
 sns = SnowballStemmer('english')
 all_chunk_dict = {}
 file_path = 'BBC News Summary/News Articles/'
-NP_grammar = '''
+np_grammar = '''
     NP CHUNK:   {<VB>?<JJ>*(<NN>|<NNS>)+}
                 {<NNP>+}
 '''
 
 def chunk_print(doc_chunk_dict):
     sort_dict = {}
-    NP_list = list(doc_chunk_dict.keys())
-    NP_group = []
-    for NP_chunk in NP_list:
-        NP_group.append(NP_chunk.split('**'))
-        for NP in NP_group:
-            sort_dict[NP_chunk] = [len(NP)]
-    for NP, value in sort_dict.items():
-        value.append(doc_chunk_dict[NP][0])
+    np_list = list(doc_chunk_dict.keys())
+    np_group = []
+    for np_chunk in np_list:
+        np_group.append(np_chunk.split('**'))
+        for np in np_group:
+            sort_dict[np_chunk] = [len(np)]
+    for np, value in sort_dict.items():
+        value.append(doc_chunk_dict[np][0])
     sorted_list = sorted(sort_dict.items(), key=operator.itemgetter(1))
     sorted_dict = dict(sorted_list)
-    for NP in sorted_dict.keys():
-        print('NP: ', NP)
-        print('  tfidf: ', doc_chunk_dict[NP][0])
-        print('  tf: ', doc_chunk_dict[NP][1])
-        print('  idf: ', doc_chunk_dict[NP][2])
-        print('  detail: ', doc_chunk_dict[NP][3])
+    for np in sorted_dict.keys():
+        print('np: ', np)
+        print('  tfidf: ', doc_chunk_dict[np][0])
+        print('  tf: ', doc_chunk_dict[np][1])
+        print('  idf: ', doc_chunk_dict[np][2])
+        print('  detail: ', doc_chunk_dict[np][3])
 
-def idf_calc(document_number, doc_chunk_dict):
-    del_NP_list = []
-    for NP, doc_list in doc_chunk_dict.items():
+def idf_calc(doc_number, doc_chunk_dict):
+    del_np_list = []
+    for np, doc_list in doc_chunk_dict.items():
         doc_sum = len(doc_list)
         tf = 0.0
         for doc in doc_list:
             tf += doc[1]
-        idf = math.log10(document_number/doc_sum)
+        idf = math.log10(doc_number/doc_sum)
         # print(tf, idf)
         tfidf = tf*idf
         if idf == 0.0:
-            del_NP_list.append(NP)
-            doc_chunk_dict[NP] = [tfidf, tf, idf, doc_list]
+            del_np_list.append(np)
+            doc_chunk_dict[np] = [tfidf, tf, idf, doc_list]
         else:
-            doc_chunk_dict[NP] = [tfidf, tf, idf, doc_list]
-    # for NP in del_NP_list:
-    #     del del_NP_list[NP]
-    return del_NP_list
+            doc_chunk_dict[np] = [tfidf, tf, idf, doc_list]
+    # for np in del_np_list:
+    #     del del_np_list[np]
+    return del_np_list
 
 def tuple_gathering(tuple_mix_list):
     result = set()
@@ -61,12 +61,12 @@ def tuple_gathering(tuple_mix_list):
     return result
 
 
-def NP_chunking(word_tag_list):
-    cp = nltk.RegexpParser(NP_grammar)
-    NP_chunk = cp.parse(word_tag_list)
-    NP_chunk_dict = {}
+def np_chunking(word_tag_list):
+    cp = nltk.RegexpParser(np_grammar)
+    np_chunk = cp.parse(word_tag_list)
+    np_chunk_dict = {}
     eng_stopwords = stopwords.words('english')
-    for subtree in NP_chunk.subtrees(filter = lambda t: t.label() == 'NP CHUNK'):
+    for subtree in np_chunk.subtrees(filter = lambda t: t.label() == 'NP CHUNK'):
         chunk_list = [w for w in subtree if not w[0].lower() in eng_stopwords if w[0].isalpha()]
         if chunk_list == []:
             continue
@@ -78,17 +78,17 @@ def NP_chunking(word_tag_list):
                 sw_list.append(sns.stem(lw))
         # print(sw_list)
         key = '**'.join(term for term in sw_list)
-        if key in NP_chunk_dict:
-            NP_chunk_dict[key].append([tuple_gathering(chunk_list)])
+        if key in np_chunk_dict:
+            np_chunk_dict[key].append([tuple_gathering(chunk_list)])
         else:
-            NP_chunk_dict[key] = [tuple_gathering(chunk_list)]
-    return NP_chunk_dict
+            np_chunk_dict[key] = [tuple_gathering(chunk_list)]
+    return np_chunk_dict
 
 
-def NP_chunk_build(document_path_list, article, doc_chunk_dict):
+def np_chunk_build(doc_path_list, article, doc_chunk_dict):
     doc_id = article.split('.')[0]
-    document = open(document_path_list, 'r')
-    text = document.readlines()
+    doc = open(doc_path_list, 'r')
+    text = doc.readlines()
     sentence_list = []
     current_doc_chunk_dict = {}
     for line in text:
@@ -98,18 +98,18 @@ def NP_chunk_build(document_path_list, article, doc_chunk_dict):
         sent_id += 1
         word_list = nltk.word_tokenize(sentence)
         word_tag_list = pos_tag(word_list)
-        NP_chunk_dict = NP_chunking(word_tag_list)
+        np_chunk_dict = np_chunking(word_tag_list)
         #replacing original word here:
-        for key, value in NP_chunk_dict.items():
+        for key, value in np_chunk_dict.items():
             chunk_freq = len(value)
-            NP_chunk_dict[key] = [doc_id, 1, [chunk_freq, sent_id]]
-        if NP_chunk_dict == []:
+            np_chunk_dict[key] = [doc_id, 1, [chunk_freq, sent_id]]
+        if np_chunk_dict == []:
             continue
-        for key, value in NP_chunk_dict.items():
+        for key, value in np_chunk_dict.items():
             if key in current_doc_chunk_dict.keys():
                 cd_id = current_doc_chunk_dict[key][0]
-                NP_d_id = value[0]
-                if NP_d_id == cd_id:
+                np_d_id = value[0]
+                if np_d_id == cd_id:
                     current_doc_chunk_dict[key][1] += 1
                     current_doc_chunk_dict[key].append(value[2])
                 else:
@@ -124,21 +124,21 @@ def NP_chunk_build(document_path_list, article, doc_chunk_dict):
     # print(current_doc_chunk_dict)
 
 
-# Boost via length of NP
+# Boost via length of np
 def sent_tfidf_calc(chunk_list):
     tfidf_sum = 0.0
     for chunk in chunk_list:
         tfidf = chunk[1]
-        NP = chunk[0].split('**')
-        boost = len(NP)
+        np = chunk[0].split('**')
+        boost = len(np)
         tfidf_sum += tfidf * (2 ** boost)
     return tfidf_sum
 
 
 ## sentence_pairing sets tfidf to be paired
-def sentence_pairing(document_path_list, article, doc_chunk_dict):
-    document = open(document_path_list, 'r')
-    text = document.readlines()
+def sentence_pairing(doc_path_list, article, doc_chunk_dict):
+    doc = open(doc_path_list, 'r')
+    text = doc.readlines()
     sentence_dict = {}
     sentence_list = []
     for line in text:
@@ -181,10 +181,10 @@ def rank_sentence(sentence_dict, top):
     sent_group = []
     for sent in sent_list:
         sent_group.append(sent.split('**'))
-        for NP in sent_group:
-            sort_dict[sent] = [len(NP)]
-    for NP, value in sort_dict.items():
-        value.append(float(sentence_dict[NP][0])*float(value[0]))
+        for np in sent_group:
+            sort_dict[sent] = [len(np)]
+    for np, value in sort_dict.items():
+        value.append(float(sentence_dict[np][0])*float(value[0]))
     sorted_list = sorted(sort_dict.items(), key=operator.itemgetter(1), reverse=True)[:top]
     sorted_dict = dict(sorted_list)
     return sorted_dict
@@ -199,19 +199,19 @@ def write_summary(top_sent_rank, summary_type, article):
 
 
 def category_summary(summary_type):
-    document_path_list = []
+    doc_path_list = []
     counter = 0
     article_list = os.listdir(file_path + summary_type)
     doc_chunk_dict = {}
     # article_list = ['014.txt']
     for article in article_list[:]:
-        document_path_list = (file_path + summary_type + article)
+        doc_path_list = (file_path + summary_type + article)
         counter += 1
         # print("Article #" + str(counter) + ': ' + article)
-        NP_chunk_build(document_path_list, article, doc_chunk_dict)
+        np_chunk_build(doc_path_list, article, doc_chunk_dict)
     
-    NP_del_list = idf_calc(counter, doc_chunk_dict)
-    # print('Appear everywhere: \n', NP_del_list)
+    np_del_list = idf_calc(counter, doc_chunk_dict)
+    # print('Appear everywhere: \n', np_del_list)
     # chunk_print(doc_chunk_dict)
     # print('calculated_idf')
     for key, values in doc_chunk_dict.items():
@@ -222,8 +222,8 @@ def category_summary(summary_type):
 
     for article in article_list[:]:
         # print("Article: ", article)
-        document_path_list = file_path + summary_type + article
-        sentence_chunk_pair_list = sentence_pairing(document_path_list, article, doc_chunk_dict)
+        doc_path_list = file_path + summary_type + article
+        sentence_chunk_pair_list = sentence_pairing(doc_path_list, article, doc_chunk_dict)
         # print('sentence_chunk_pair_list: \n', sentence_chunk_pair_list)
         T5_sent_ranked = rank_sentence(sentence_chunk_pair_list, 5)
         # print(T5_sent_ranked)
