@@ -61,6 +61,7 @@ After being chunked and calculated their TFIDF, then each document is then re-ex
 The phrases, when being revisited to count their frequencies in a document, can then be pair with each sentence, hence creating a key-value pairing system. Each sentence can be the key, and the phrases can be the values, which will store their TFIDF for calculation.  
 The principle behind this is like the illustration below:  
 Original text:  
+<img src="https://github.com/mdhdoan/text_summarization/blob/master/Extra/Article.png" width="700" height="500">
 > ![Original text](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Article.png)  
 
 Then being paired up with extracted noun phrases:  
