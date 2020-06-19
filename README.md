@@ -1,5 +1,4 @@
-# Extraction-based summary of BBC articles |
-News Articles are included below
+# Automatic Extraction-based summarization of BBC articles |
 
 # Abstracts:
 Given the fact that there are too many written articles being produced daily, how can one summarize them automatically for their purposes? This paper focuses on performing automatic summarization on news articles. The main method deployed in this publish will be a crude automatic extraction-based summarization, based on [Term Frequency over Inverse Document Frequency](https://en.wikipedia.org/wiki/Tf–idf) - (**TFIDF**) of each phrase. 
