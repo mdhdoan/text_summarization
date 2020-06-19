@@ -51,6 +51,7 @@ In this case, the ruleset is the following:
 
 Using the grammar rule above, when running the program, the noun phrases can be viewed with the following design:  
 > ![Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png)  
+
 In this case, since only one document is being processed for the sake of the example, the "tfidf" is the one mentioned above, whereas the "tf" is the term frequency, and the "idf" is the inverse document frequency. The detail included is stating which document they belong (each category has their own set of Noun Phrase, so no worries about duplications of documents id for now), then how many times the term appeared in the document, followed by how many times the Noun Phrase appears in a sentence, and which sentence it is.
 For longer Noun Phrase, they can be separated by "\*\*"  
 > ![Longer Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.49%20AM.png)  
