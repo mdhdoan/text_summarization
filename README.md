@@ -66,7 +66,7 @@ Original text:
 Then being paired up with extracted noun phrases:  
 > ![paired](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Sentence%20pairing.png)
 
-In the middle of the program, the TFIDF of each noun phrases will be included:
+In the middle of the program, the TFIDF of each noun phrases will be included, after being boosted in respect to the length of each noun phrase.  
 > ![NP-pairing](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.32.01%20PM.png)
 
 
