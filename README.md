@@ -61,8 +61,7 @@ After being chunked and calculated their TFIDF, then each document is then re-ex
 The phrases, when being revisited to count their frequencies in a document, can then be pair with each sentence, hence creating a key-value pairing system. Each sentence can be the key, and the phrases can be the values, which will store their TFIDF for calculation.  
 The principle behind this is like the illustration below:  
 Original text:  
-<img src="https://github.com/mdhdoan/text_summarization/blob/master/Extra/Article.png" width="700" height="500">
-> ![Original text](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Article.png)  
+> <img src="https://github.com/mdhdoan/text_summarization/blob/master/Extra/Article.png" width="700" height="500">
 
 Then being paired up with extracted noun phrases:  
 > ![paired](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Sentence%20pairing.png)
@@ -73,7 +72,7 @@ In the middle of the program, the TFIDF of each noun phrases will be included, a
 
 ## 5.3. Result sentences ranked and written into files:
 Lastly, the summaries are made of 5 sentences, as agreed upon above, so the job is to rank the sentences in each document to produce the top 5 sentences concerning their sentences' TFIDF.
-> ![ranked](https://github.com/mdhdoan/text_summarization/blob/master/Extra/ranking.png)  
+> <img src="https://github.com/mdhdoan/text_summarization/blob/master/Extra/ranking.png" width="700" height="500">
 
 While in the program, each sentence will have the following format, where each sentence has 2 numerical values, where the second number is the important value: sentence's weight.
 The result can be a little bit difficult to imagine, so below are 2 summaries, one provided by BBC and the other is produced by the method in step 4.  
