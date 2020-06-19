@@ -79,7 +79,7 @@ The result can be a little bit difficult to imagine, so below are 2 summaries, o
 Given summary | Produced summary:  
 > ![G|P](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.28.34%20PM.png) 
 
-While the given summary is longer, most - in green color above - (and the entirety in some cases) of the produced summaries are included in the given summary. Since summaries are supposed to be short and carry the important ideas only, it is safe to say that the produced result is acceptable.    
+While the given summary is longer, most - in red color above - (and the entirety in some cases) of the produced summaries are included in the given summary. Since summaries are supposed to be short and carry the important ideas only, it is safe to say that the produced result is acceptable.    
 All results are then put into [My Summaries](https://github.com/mdhdoan/text_summarization/tree/master/My%20Summaries), for future usage and collection.
 
 
