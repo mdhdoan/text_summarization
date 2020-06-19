@@ -50,30 +50,30 @@ In this case, the ruleset is the following:
 * Also Pronouns are considered as a noun phrase too  
 
 Using the grammar rule above, when running the program, the noun phrases can be viewed with the following design:  
-![Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png)  
+> ![Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.32%20AM.png)  
 In this case, since only one document is being processed for the sake of the example, the "tfidf" is the one mentioned above, whereas the "tf" is the term frequency, and the "idf" is the inverse document frequency. The detail included is stating which document they belong (each category has their own set of Noun Phrase, so no worries about duplications of documents id for now), then how many times the term appeared in the document, followed by how many times the Noun Phrase appears in a sentence, and which sentence it is.
 For longer Noun Phrase, they can be separated by "\*\*"  
-![Longer Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.49%20AM.png)  
+> ![Longer Noun Phrase](https://github.com/mdhdoan/text_summarization/blob/master/Terminal%20pictures/Screen%20Shot%202020-06-13%20at%2010.34.49%20AM.png)  
 
 ## 5.2. Sentence Pairing with Noun Phrase: 
 After being chunked and calculated their TFIDF, then each document is then re-examined to pair up the sentences with their Noun Phrases. The Noun Phrase can be used to further lemmatized, which would enable similar phrases, such as "good people", and "nice people" to both be understood as talking about people.
 The phrases, when being revisited to count their frequencies in a document, can then be pair with each sentence, hence creating a key-value pairing system. Each sentence can be the key, and the phrases can be the values, which will store their TFIDF for calculation.  
 The principle behind this is like the illustration below:  
 Original text:  
-![Original text](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Article.png)  
+> ![Original text](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Article.png)  
 Then being paired up with extracted noun phrases:  
-![paired](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Sentence%20pairing.png)
+> ![paired](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Sentence%20pairing.png)
 In the middle of the program, the TFIDF of each noun phrases will be included:
-![NP-pairing](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.32.01%20PM.png)
+> ![NP-pairing](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.32.01%20PM.png)
 
 
 ## 5.3. Result sentences ranked and written into files:
 Lastly, the summaries are made of 5 sentences, as agreed upon above, so the job is to rank the sentences in each document to produce the top 5 sentences concerning their sentences' TFIDF.
-![ranked](https://github.com/mdhdoan/text_summarization/blob/master/Extra/ranking.png)  
+> ![ranked](https://github.com/mdhdoan/text_summarization/blob/master/Extra/ranking.png)  
 While in the program, each sentence will have the following format, where each sentence has 2 numerical values, where the second number is the important value: sentence's weight.
 The result can be a little bit difficult to imagine, so below are 2 summaries, one provided by BBC and the other is produced by the method in step 4.  
 Given summary | Produced summary:  
-![G|P](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.28.34%20PM.png)  
+> ![G|P](https://github.com/mdhdoan/text_summarization/blob/master/Extra/Screen%20Shot%202020-06-18%20at%208.28.34%20PM.png)  
 While the given summary is longer, most - in green color above - (and the entirety in some cases) of the produced summaries are included in the given summary. Since summaries are supposed to be short and carry the important ideas only, it is safe to say that the produced result is acceptable.    
 All results are then put into [My Summaries](https://github.com/mdhdoan/text_summarization/tree/master/My%20Summaries), for future usage and collection.
 
